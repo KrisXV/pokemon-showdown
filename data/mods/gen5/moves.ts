@@ -15,6 +15,10 @@ export const BattleMovedex: {[k: string]: ModdedMoveData} = {
 		inherit: true,
 		pp: 20,
 	},
+	ancientpower: {
+		inherit: true,
+		name: "AncientPower",
+	},
 	aromatherapy: {
 		inherit: true,
 		desc: "Every Pokemon in the user's party is cured of its major status condition.",
@@ -125,6 +129,10 @@ export const BattleMovedex: {[k: string]: ModdedMoveData} = {
 		inherit: true,
 		basePower: 20,
 	},
+	bubblebeam: {
+		inherit: true,
+		name: "BubbleBeam",
+	},
 	bugbuzz: {
 		inherit: true,
 		flags: {protect: 1, mirror: 1, sound: 1},
@@ -226,10 +234,18 @@ export const BattleMovedex: {[k: string]: ModdedMoveData} = {
 		inherit: true,
 		desc: "The user is protected from most attacks made by other Pokemon during this turn. This move has a 1/X chance of being successful, where X starts at 1 and doubles each time this move is successfully used. X resets to 1 if this move fails or if the user's last move used is not Detect, Endure, Protect, Quick Guard, or Wide Guard. Fails if the user moves last this turn.",
 	},
+    doubleslap: {
+        inherit: true,
+        name: "DoubleSlap",
+    },
 	dracometeor: {
 		inherit: true,
 		basePower: 140,
 	},
+    dragonbreath: {
+        inherit: true,
+        name: "DragonBreath",
+    },
 	dragonpulse: {
 		inherit: true,
 		basePower: 90,
@@ -246,6 +262,10 @@ export const BattleMovedex: {[k: string]: ModdedMoveData} = {
 		inherit: true,
 		flags: {protect: 1, mirror: 1},
 	},
+    dynamicpunch: {
+        inherit: true,
+        name: "DynamicPunch",
+    },
 	echoedvoice: {
 		inherit: true,
 		flags: {protect: 1, mirror: 1, sound: 1},
@@ -276,14 +296,30 @@ export const BattleMovedex: {[k: string]: ModdedMoveData} = {
 		inherit: true,
 		pp: 30,
 	},
+    extremespeed: {
+        inherit: true,
+        name: "ExtremeSpeed",
+    },
 	facade: {
 		inherit: true,
 		desc: "Power doubles if the user is burned, paralyzed, or poisoned.",
 	},
+    faintattack: {
+        inherit: 'feintattack',
+        name: "Faint Attack",
+    },
+    featherdance: {
+        inherit: true,
+        name: "FeatherDance",
+    },
 	feint: {
 		inherit: true,
 		desc: "If this move is successful, it breaks through the target's Detect or Protect for this turn, allowing other Pokemon to attack the target normally. If the target is an opponent and its side is protected by Quick Guard or Wide Guard, that protection is also broken for this turn and other Pokemon may attack the opponent's side normally.",
 		flags: {},
+	},
+	feintattack: {
+		inherit: true,
+		isNonstandard: "Future",
 	},
 	finalgambit: {
 		inherit: true,
