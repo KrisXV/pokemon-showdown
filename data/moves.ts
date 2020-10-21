@@ -3654,6 +3654,22 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Dragon",
 		maxMove: {basePower: 130},
 	},
+	dragonenergy: {
+		num: 99999,
+		accuracy: 100,
+		basePower: 150,
+		basePowerCallback(pokemon, target, move) {
+			return move.basePower * pokemon.hp / pokemon.maxhp;
+		},
+		category: "Special",
+		name: "Dragon Energy",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: null,
+		target: "allAdjacentFoes",
+		type: "Dragon",
+	},
 	dragonhammer: {
 		num: 692,
 		accuracy: 100,
@@ -3972,6 +3988,31 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Electric",
 		zMove: {boost: {spd: 1}},
 		contestType: "Clever",
+	},
+	eeriespell: {
+		num: 99999,
+		accuracy: 100,
+		basePower: 90,
+		category: "Special",
+		name: "Eerie Spell",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		onHit(target) {
+			const move = target.lastMove;
+			if (move && !move.isZ && !move.isMax) {
+				const ppDeducted = target.deductPP(move.id, 3);
+				if (ppDeducted) {
+					this.add("-activate", target, 'move: Eerie Spell', move.name, ppDeducted);
+					return;
+				}
+			}
+			return false;
+		},
+		secondary: null,
+		target: "adjacentFoe",
+		type: "Dragon",
+		contestType: "Cool",
 	},
 	eggbomb: {
 		num: 121,
@@ -4686,6 +4727,22 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "normal",
 		type: "Fire",
 		contestType: "Beautiful",
+	},
+	fierywrath: {
+		num: 99999,
+		accuracy: 100,
+		basePower: 80,
+		category: "Special",
+		name: "Fiery Wrath",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, pulse: 1, mirror: 1, distance: 1},
+		secondary: {
+			chance: 20,
+			volatileStatus: 'flinch',
+		},
+		target: "any",
+		type: "Dark",
 	},
 	finalgambit: {
 		num: 515,
@@ -5589,6 +5646,23 @@ export const Moves: {[moveid: string]: MoveData} = {
 		},
 		target: "normal",
 		type: "Ice",
+		contestType: "Beautiful",
+	},
+	freezingglare: {
+		num: 99999,
+		accuracy: 100,
+		basePower: 90,
+		category: "Special",
+		name: "Freezing Glare",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: {
+			chance: 10,
+			status: 'frz',
+		},
+		target: "normal",
+		type: "Psychic",
 		contestType: "Beautiful",
 	},
 	freezyfrost: {
@@ -9967,7 +10041,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 		accuracy: 75,
 		basePower: 100,
 		category: "Special",
-		isNonstandard: "Past",
 		name: "Magma Storm",
 		pp: 5,
 		priority: 0,
@@ -18000,6 +18073,20 @@ export const Moves: {[moveid: string]: MoveData} = {
 		type: "Electric",
 		contestType: "Cool",
 	},
+	thundercage: {
+		num: 99999,
+		accuracy: 75,
+		basePower: 100,
+		category: "Special",
+		name: "Thunder Cage",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		volatileStatus: 'partiallytrapped',
+		secondary: null,
+		target: "normal",
+		type: "Electric",
+	},
 	thunderfang: {
 		num: 422,
 		accuracy: 95,
@@ -18021,6 +18108,25 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "normal",
 		type: "Electric",
 		contestType: "Cool",
+	},
+	thunderouskick: {
+		num: 99999,
+		accuracy: 100,
+		basePower: 70,
+		category: "Physical",
+		name: "Thunderous Kick",
+		pp: 15,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		secondary: {
+			chance: 100,
+			boosts: {
+				def: -1,
+			},
+		},
+		target: "normal",
+		type: "Electric",
+		contestType: "Cute",
 	},
 	thunderpunch: {
 		num: 9,
