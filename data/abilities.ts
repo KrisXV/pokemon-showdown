@@ -328,6 +328,16 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 2,
 		num: 167,
 	},
+	chillingneigh: {
+		onSourceAfterFaint(length, target, source, effect) {
+			if (effect && effect.effectType === 'Move') {
+				this.boost({atk: length}, source);
+			}
+		},
+		name: "Chilling Neigh",
+		rating: 3,
+		num: 263,
+	},
 	chlorophyll: {
 		onModifySpe(spe, pokemon) {
 			if (['sunnyday', 'desolateland'].includes(pokemon.effectiveWeather())) {
@@ -474,6 +484,19 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		name: "Cotton Down",
 		rating: 2,
 		num: 238,
+	},
+	curiousmedicine: {
+		onStart(pokemon) {
+			for (const ally of pokemon.side.active) {
+				if (ally !== pokemon) {
+					ally.clearBoosts();
+					this.add('-clearboost', ally, '[from] ability: Curious Medicine', '[of] ' + pokemon);
+				}
+			}
+		},
+		name: "Curious Medicine",
+		rating: 2,
+		num: 260,
 	},
 	cursedbody: {
 		onDamagingHit(damage, target, source, move) {
@@ -715,6 +738,18 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		name: "Download",
 		rating: 3.5,
 		num: 88,
+	},
+	dragonsmaw: {
+		onBasePowerPriority: 21,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.type === 'Dragon') {
+				// TODO: Find actual modifier
+				return this.chainModify([0x14CD, 0x1000]);
+			}
+		},
+		name: "Dragon's Maw",
+		rating: 3,
+		num: 262,
 	},
 	drizzle: {
 		onStart(source) {
@@ -1198,6 +1233,16 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		name: "Grassy Surge",
 		rating: 4,
 		num: 229,
+	},
+	grimneigh: {
+		onSourceAfterFaint(length, target, source, effect) {
+			if (effect && effect.effectType === 'Move') {
+				this.boost({spa: length}, source);
+			}
+		},
+		name: "Grim Neigh",
+		rating: 3,
+		num: 264,
 	},
 	gulpmissile: {
 		onDamagingHit(damage, target, source, move) {
@@ -3839,6 +3884,18 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 2.5,
 		num: 36,
 	},
+	transistor: {
+		onBasePowerPriority: 21,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.type === 'Electric') {
+				// TODO: Find actual modifier
+				return this.chainModify([0x14CD, 0x1000]);
+			}
+		},
+		name: "Transistor",
+		rating: 3,
+		num: 261,
+	},
 	triage: {
 		onModifyPriority(priority, pokemon, target, move) {
 			if (move?.flags['heal']) return priority + 3;
@@ -3928,6 +3985,32 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		name: "Unnerve",
 		rating: 1.5,
 		num: 127,
+	},
+	unnervechillingneighcombined: {
+		onPreStart(pokemon) {
+			this.add('-ability', pokemon, 'Unnerve + Chilling Neigh (combined)', pokemon.side.foe);
+		},
+		onSourceAfterFaint(length, target, source, effect) {
+			if (effect && effect.effectType === 'Move') {
+				this.boost({atk: length}, source);
+			}
+		},
+		name: "Unnerve + Chilling Neigh (combined)",
+		rating: 3.5,
+		num: 265,
+	},
+	unnervegrimneighcombined: {
+		onPreStart(pokemon) {
+			this.add('-ability', pokemon, 'Unnerve + Grim Neigh (combined)', pokemon.side.foe);
+		},
+		onSourceAfterFaint(length, target, source, effect) {
+			if (effect && effect.effectType === 'Move') {
+				this.boost({spa: length}, source);
+			}
+		},
+		name: "Unnerve + Grim Neigh (combined)",
+		rating: 3.5,
+		num: 266,
 	},
 	unseenfist: {
 		onModifyMove(move) {
