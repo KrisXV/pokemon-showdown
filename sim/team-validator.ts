@@ -664,7 +664,8 @@ export class TeamValidator {
 			// Ability Capsule allows this in Gen 6+
 			problems.push(`${name} has a Gen 4 ability and isn't evolved - it can't use moves from Gen 3.`);
 		}
-		if (setSources.maxSourceGen() < 5 && setSources.isHidden) {
+		if (setSources.maxSourceGen() < 5 &&
+			(setSources.isHidden && (dex.gen < 8 || format.mod === 'vgc20'))) {
 			problems.push(`${name} has a Hidden Ability - it can't use moves from before Gen 5.`);
 		}
 		if (
@@ -1687,7 +1688,7 @@ export class TeamValidator {
 			setSources.sources = setSources.sources.filter(
 				source => parseInt(source.charAt(0)) >= 5
 			);
-			if (setSources.sourcesBefore < 5) setSources.sourcesBefore = 0;
+			if (setSources.sourcesBefore < 5 && (dex.gen < 8 || this.format.mod === 'vgc20')) setSources.sourcesBefore = 0;
 			if (!setSources.sourcesBefore && !setSources.sources.length) {
 				problems.push(`${name} has a hidden ability - it can't have moves only learned before gen 5.`);
 				return problems;
@@ -1845,7 +1846,8 @@ export class TeamValidator {
 
 					if (
 						learnedGen < 7 && setSources.isHidden &&
-						!dex.mod('gen' + learnedGen).getSpecies(baseSpecies.name).abilities['H']
+						!dex.mod('gen' + learnedGen).getSpecies(baseSpecies.name).abilities['H'] &&
+						(dex.gen < 8 || this.format.mod === 'vgc20')
 					) {
 						// check if the Pokemon's hidden ability was available
 						incompatibleAbility = true;

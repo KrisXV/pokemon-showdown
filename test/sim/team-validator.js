@@ -579,6 +579,24 @@ describe('Team Validator', function () {
 		assert(illegal);
 	});
 
+	it('should allow moves learned in generations without hidden abilities to be legal in generation 8', function () {
+		let team = [
+			{species: 'clefable', ability: 'unaware', moves: ['softboiled'], evs: {hp: 1}},
+		];
+		let illegal = TeamValidator.get('gen8anythinggoes').validateTeam(team);
+		assert.equal(illegal, null);
+
+		team = [
+			{species: 'ivysaur', ability: 'chlorophyll', moves: ['stringshot', 'outrage'], evs: {hp: 1}},
+		];
+		illegal = TeamValidator.get('gen8anythinggoes').validateTeam(team);
+
+		team = [
+			{species: 'pikachu', ability: 'static', moves: ['endeavor'], evs: {hp: 1}},
+		];
+		illegal = TeamValidator.get('gen8anythinggoes').validateTeam(team);
+		assert(illegal);
+	});
 
 	/*********************************************************
  	* Custom rules
