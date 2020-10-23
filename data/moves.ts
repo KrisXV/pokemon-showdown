@@ -3990,14 +3990,14 @@ export const Moves: {[moveid: string]: MoveData} = {
 		contestType: "Clever",
 	},
 	eeriespell: {
-		num: 99999,
+		num: 826,
 		accuracy: 100,
-		basePower: 90,
+		basePower: 80,
 		category: "Special",
 		name: "Eerie Spell",
-		pp: 15,
+		pp: 5,
 		priority: 0,
-		flags: {protect: 1, mirror: 1},
+		flags: {protect: 1, mirror: 1, sound: 1, authentic: 1},
 		onHit(target) {
 			const move = target.lastMove;
 			if (move && !move.isZ && !move.isMax) {
@@ -4010,9 +4010,8 @@ export const Moves: {[moveid: string]: MoveData} = {
 			return false;
 		},
 		secondary: null,
-		target: "adjacentFoe",
-		type: "Dragon",
-		contestType: "Cool",
+		target: "normal",
+		type: "Psychic",
 	},
 	eggbomb: {
 		num: 121,
