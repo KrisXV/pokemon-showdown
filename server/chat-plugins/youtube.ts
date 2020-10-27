@@ -25,7 +25,7 @@ interface ChannelEntry {
 	category?: string;
 }
 
-interface VideoData {
+export interface VideoData {
 	id: string;
 	title: string;
 	date: string;

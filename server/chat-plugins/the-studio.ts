@@ -9,7 +9,7 @@
 import {FS} from '../../lib/fs';
 import {Net} from '../../lib/net';
 import {Utils} from '../../lib/utils';
-import {YouTube} from './youtube';
+import {VideoData, YouTube} from './youtube';
 
 const LASTFM_DB = 'config/chat-plugins/lastfm.json';
 const RECOMMENDATIONS = 'config/chat-plugins/the-studio.json';
@@ -41,13 +41,39 @@ interface Recommendation {
 interface Recommendations {
 	suggested: Recommendation[];
 	saved: Recommendation[];
+	videos: {[k: string]: VideoData};
 }
 
-const lastfm: {[userid: string]: string} = JSON.parse(FS(LASTFM_DB).readIfExistsSync() || "{}");
+interface LastFMDB {
+	usernames: {[k: string]: string};
+	videoIDs: {[k: string]: string};
+}
+
+let lastfm: LastFMDB = JSON.parse(FS(LASTFM_DB).readIfExistsSync() || "{}");
 const recommendations: Recommendations = JSON.parse(FS(RECOMMENDATIONS).readIfExistsSync() || "{}");
+
+function convertLastFM() {
+	if (!(lastfm.usernames && lastfm.videoIDs)) {
+		const oldDB = lastfm;
+		lastfm = {
+			usernames: {},
+			videoIDs: {},
+		};
+		for (const i in oldDB) {
+			// @ts-ignore
+			lastfm.usernames[i] = oldDB[i];
+			// @ts-ignore
+			delete oldDB[i];
+		}
+		saveLastFM();
+	}
+}
+
+convertLastFM();
 
 if (!recommendations.saved) recommendations.saved = [];
 if (!recommendations.suggested) recommendations.suggested = [];
+if (!recommendations.videos) recommendations.videos = {};
 saveRecommendations();
 
 function updateRecTags() {
@@ -107,10 +133,18 @@ export class LastFMInterface {
 			buf += `<br />`;
 			const trackName = `${track.artist?.['#text'] ? `${track.artist['#text']} - ` : ''}${track.name}`;
 			let videoIDs: string[] | undefined;
-			try {
-				videoIDs = await YouTube.searchVideo(trackName, 1);
-			} catch (e) {
-				throw new Chat.ErrorMessage(`Error while fetching video data: ${e.message}`);
+			if (trackName in lastfm.videoIDs) {
+				videoIDs = [lastfm.videoIDs[trackName]];
+			} else {
+				try {
+					videoIDs = await YouTube.searchVideo(trackName, 1);
+					if (videoIDs?.length) {
+						lastfm.videoIDs[trackName] = videoIDs[0];
+						saveLastFM();
+					}
+				} catch (e) {
+					throw new Chat.ErrorMessage(`Error while fetching video data: ${e.message}`);
+				}
 			}
 			if (!videoIDs?.length) {
 				throw new Chat.ErrorMessage(`Something went wrong with the YouTube API.`);
@@ -124,13 +158,13 @@ export class LastFMInterface {
 	addAccountName(userid: ID, accountName: string) {
 		this.checkHasKey();
 		accountName = accountName.trim();
-		if (lastfm[userid]) {
-			const oldName = lastfm[userid];
-			lastfm[userid] = accountName;
+		if (lastfm.usernames[userid]) {
+			const oldName = lastfm.usernames[userid];
+			lastfm.usernames[userid] = accountName;
 			saveLastFM();
 			return `last.fm account name changed from '${oldName}' to '${accountName}'.`;
 		}
-		lastfm[userid] = accountName;
+		lastfm.usernames[userid] = accountName;
 		saveLastFM();
 		return `Registered last.fm account '${accountName}'.`;
 	}
@@ -146,7 +180,7 @@ export class LastFMInterface {
 	}
 
 	getAccountName(username: string) {
-		if (lastfm[toID(username)]) return lastfm[toID(username)];
+		if (lastfm.usernames[toID(username)]) return lastfm.usernames[toID(username)];
 		return username.trim().replace(/ /g, '_').replace(/[^-_a-zA-Z0-9]/g, '');
 	}
 
@@ -181,10 +215,18 @@ export class LastFMInterface {
 			const artistUrl = obj.url.split('_/')[0];
 			buf += `<strong><a href="${artistUrl}">${artistName}</a> - <a href="${obj.url}">${trackName}</a></strong><br />`;
 			let videoIDs: string[] | undefined;
-			try {
-				videoIDs = await YouTube.searchVideo(searchName, 1);
-			} catch (e) {
-				throw new Chat.ErrorMessage(`Error while fetching video data: ${e.message}`);
+			if (searchName in lastfm.videoIDs) {
+				videoIDs = [lastfm.videoIDs[searchName]];
+			} else {
+				try {
+					videoIDs = await YouTube.searchVideo(searchName, 1);
+					if (videoIDs?.length) {
+						lastfm.videoIDs[searchName] = videoIDs[0];
+						saveLastFM();
+					}
+				} catch (e) {
+					throw new Chat.ErrorMessage(`Error while fetching video data: ${e.message}`);
+				}
 			}
 			if (!videoIDs?.length) {
 				buf += searchName;
@@ -314,10 +356,18 @@ class RecommendationsInterface {
 
 	async render(rec: Recommendation, suggested = false) {
 		let videoInfo = null;
-		try {
-			videoInfo = await YouTube.getVideoData(rec.url);
-		} catch (e) {
-			throw new Chat.ErrorMessage(`Error while fetching recommendation URL: ${e.message}`);
+		if (rec.url in recommendations.videos) {
+			videoInfo = recommendations.videos[rec.url];
+		} else {
+			try {
+				videoInfo = await YouTube.getVideoData(rec.url);
+				if (videoInfo) {
+					recommendations.videos[rec.url] = videoInfo;
+					saveRecommendations();
+				}
+			} catch (e) {
+				throw new Chat.ErrorMessage(`Error while fetching recommendation URL: ${e.message}`);
+			}
 		}
 		let buf = ``;
 		buf += `<div style="color:#000;background:linear-gradient(rgba(210,210,210),rgba(225,225,225))">`;
