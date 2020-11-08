@@ -1817,6 +1817,7 @@ export const Chat = new class {
 		}
 
 		for (const file of files) {
+			if (file === 'github' && !Config.github) continue;
 			this.loadPlugin(`chat-plugins/${file}`);
 		}
 		Chat.oldPlugins = {};
