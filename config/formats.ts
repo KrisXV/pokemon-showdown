@@ -614,7 +614,7 @@ export const Formats: FormatList = [
 			return species.id;
 		},
 		validateSet(set, teamHas) {
-			const unreleased = (pokemon: Species) => pokemon.tier === "Unreleased" && pokemon.isNonstandard === "Unobtainable";
+			const unreleased = (pokemon: Species) => pokemon.tiers.singles === "Unreleased" && pokemon.isNonstandard === "Unobtainable";
 			if (!teamHas.abilityMap) {
 				teamHas.abilityMap = Object.create(null);
 				for (const speciesid in Dex.data.Pokedex) {
@@ -1048,7 +1048,7 @@ export const Formats: FormatList = [
 			if (check) return [check];
 			if (!species.exists || species.isNonstandard || species === crossSpecies) return this.validateSet(set, teamHas);
 			if (!species.nfe) return [`${species.name} cannot cross evolve because it doesn't evolve.`];
-			const crossIsUnreleased = (crossSpecies.tier === "Unreleased" && crossSpecies.isNonstandard === "Unobtainable");
+			const crossIsUnreleased = (crossSpecies.tiers.singles === "Unreleased" && crossSpecies.isNonstandard === "Unobtainable");
 			if (crossSpecies.battleOnly || crossIsUnreleased || !crossSpecies.prevo) {
 				return [`${species.name} cannot cross evolve into ${crossSpecies.name} because it isn't an evolution.`];
 			}
@@ -1084,7 +1084,7 @@ export const Formats: FormatList = [
 			const crossSpecies = this.dex.getSpecies(target.set.name);
 			if (!crossSpecies.exists) return;
 			if (species.battleOnly || !species.nfe) return;
-			const crossIsUnreleased = (crossSpecies.tier === "Unreleased" && crossSpecies.isNonstandard === "Unobtainable");
+			const crossIsUnreleased = (crossSpecies.tiers.singles === "Unreleased" && crossSpecies.isNonstandard === "Unobtainable");
 			if (crossSpecies.battleOnly || crossIsUnreleased || !crossSpecies.prevo) return;
 			const crossPrevoSpecies = this.dex.getSpecies(crossSpecies.prevo);
 			if (!crossPrevoSpecies.prevo !== !species.prevo) return;
@@ -1265,7 +1265,7 @@ export const Formats: FormatList = [
 				nfe: 40,
 				lc: 40,
 			};
-			let tier = this.toID(species.tier) || 'ou';
+			let tier = this.toID(species.tiers.singles) || 'ou';
 			if (!(tier in boosts)) return;
 			// Non-Pokemon bans in lower tiers
 			if (target && boosts[tier] > 20) {

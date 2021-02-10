@@ -2121,7 +2121,7 @@ export const Chat = new class {
 
 	getDataPokemonHTML(species: Species, gen = 8, tier = '') {
 		let buf = '<li class="result">';
-		buf += '<span class="col numcol">' + (tier || species.tier) + '</span> ';
+		buf += '<span class="col numcol">' + (tier || species.tiers.singles) + '</span> ';
 		buf += `<span class="col iconcol"><psicon pokemon="${species.id}"/></span> `;
 		buf += `<span class="col pokemonnamecol" style="white-space:nowrap"><a href="https://${Config.routes.dex}/pokemon/${species.id}" target="_blank">${species.name}</a></span> `;
 		buf += '<span class="col typecol">';

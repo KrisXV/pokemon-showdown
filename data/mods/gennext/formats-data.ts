@@ -1,62 +1,107 @@
 export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 	aegislash: {
 		inherit: true,
-		tier: "OU",
+		tiers: {
+			singles: "OU",
+			doubles: "DOU",
+		},
 	},
 	blaziken: {
 		inherit: true,
-		tier: "OU",
+		tiers: {
+			singles: "OU",
+			doubles: "(DUU)",
+		},
 	},
 	blazikenmega: {
 		inherit: true,
-		tier: "OU",
+		tiers: {
+			singles: "OU",
+			doubles: "(DUU)",
+		},
 	},
 	genesect: {
 		inherit: true,
-		tier: "OU",
+		tiers: {
+			singles: "OU",
+			doubles: "DUU",
+		},
 	},
 	gengarmega: {
 		inherit: true,
-		tier: "OU",
+		tiers: {
+			singles: "OU",
+			doubles: "DOU",
+		},
 	},
 	greninja: {
 		inherit: true,
-		tier: "OU",
+		tiers: {
+			singles: "OU",
+			doubles: "(DUU)",
+		},
 	},
 	kangaskhanmega: {
 		inherit: true,
-		tier: "OU",
+		tiers: {
+			singles: "OU",
+			doubles: "DOU",
+		},
 	},
 	landorus: {
 		inherit: true,
-		tier: "OU",
+		tiers: {
+			singles: "OU",
+			doubles: "(DUU)",
+		},
 	},
 	mawilemega: {
 		inherit: true,
-		tier: "OU",
+		tiers: {
+			singles: "OU",
+			doubles: "(DUU)",
+		},
 	},
 	salamencemega: {
 		inherit: true,
-		tier: "OU",
+		tiers: {
+			singles: "OU",
+			doubles: "DUber",
+		},
 	},
 	deoxysdefense: {
 		inherit: true,
-		tier: "Uber",
+		tiers: {
+			singles: "Uber",
+			doubles: "(DUU)",
+		},
 	},
 	deoxysspeed: {
 		inherit: true,
-		tier: "Uber",
+		tiers: {
+			singles: "Uber",
+			doubles: "DUU",
+		},
 	},
 	hoopaunbound: {
 		inherit: true,
-		tier: "OU",
+		tiers: {
+			singles: "OU",
+			doubles: "DOU",
+		},
 	},
 	kyurem: {
 		inherit: true,
-		tier: "Uber",
+		tiers: {
+			singles: "Uber",
+			doubles: "(DUU)",
+		},
 	},
 	kyuremblack: {
 		inherit: true,
-		tier: "Uber",
+		tiers: {
+			singles: "Uber",
+			doubles: "DOU",
+		},
 	},
 };

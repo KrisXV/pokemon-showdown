@@ -1,569 +1,851 @@
 export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 	pikachuworld: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	nidoranf: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	nidorina: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	nidoqueen: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	nidoranm: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	nidorino: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	nidoking: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	zubat: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	golbat: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	crobat: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	slowkinggalar: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	smoochum: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	jynx: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	elekid: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	electabuzz: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	electivire: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	magby: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	magmar: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	magmortar: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	omanyte: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	omastar: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	kabuto: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	kabutops: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	aerodactyl: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	articuno: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	articunogalar: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	zapdos: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	zapdosgalar: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	moltres: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	moltresgalar: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	dratini: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	dragonair: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	dragonite: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	raikou: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	entei: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	suicune: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	lugia: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	hooh: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	treecko: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	grovyle: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	sceptile: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	torchic: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	combusken: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	blaziken: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	mudkip: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	marshtomp: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	swampert: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	aron: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	lairon: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	aggron: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	swablu: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	altaria: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	lileep: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	cradily: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	anorith: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	armaldo: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	absol: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	spheal: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	sealeo: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	walrein: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	bagon: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	shelgon: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	salamence: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	beldum: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	metang: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	metagross: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	regirock: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	regice: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	registeel: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	latias: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	latios: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	kyogre: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	groudon: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	rayquaza: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	spiritomb: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	gible: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	gabite: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	garchomp: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	uxie: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	mesprit: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	azelf: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	dialga: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	palkia: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	heatran: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	regigigas: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	giratina: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	giratinaorigin: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	cresselia: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	victini: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	audino: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	tirtouga: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	carracosta: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	archen: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	archeops: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	cryogonal: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	tornadus: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	tornadustherian: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	thundurus: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	thundurustherian: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	landorus: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	landorustherian: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	genesect: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	genesectburn: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	genesectchill: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	genesectdouse: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	genesectshock: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	tyrunt: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	tyrantrum: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	amaura: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	aurorus: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	carbink: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	xerneas: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	yveltal: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	zygarde: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	zygarde10: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	diancie: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	volcanion: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	tapukoko: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	tapulele: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	tapubulu: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	tapufini: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	nihilego: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	buzzwole: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	pheromosa: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	xurkitree: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	celesteela: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	kartana: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	guzzlord: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	poipole: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	naganadel: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	stakataka: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	blacephalon: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	melmetal: {
 		gmaxUnreleased: true,
 	},
 	melmetalgmax: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	zarudedada: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	regieleki: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	regidrago: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	glastrier: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	spectrier: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	calyrex: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	calyrexice: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 	calyrexshadow: {
 		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
+		tiers: {
+			singles: "Unreleased",
+		},
 	},
 };

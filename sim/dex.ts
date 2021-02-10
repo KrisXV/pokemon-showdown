@@ -373,30 +373,48 @@ export class ModdedDex {
 					if (!(key in species)) species[key] = baseSpeciesStatuses[key];
 				}
 			}
-			if (!species.tier && !species.doublesTier && species.baseSpecies !== species.name) {
+			if (!species.tiers) species.tiers = {};
+			if (!species.tiers.singles && (species.changesFrom || species.baseSpecies) !== species.name) {
 				if (species.baseSpecies === 'Mimikyu') {
-					species.tier = this.data.FormatsData[toID(species.baseSpecies)].tier || 'Illegal';
-					species.doublesTier = this.data.FormatsData[toID(species.baseSpecies)].doublesTier || 'Illegal';
+					species.tiers.singles = this.data.FormatsData['mimikyu'].tiers?.singles || 'Illegal';
 				} else if (species.id.endsWith('totem')) {
-					species.tier = this.data.FormatsData[species.id.slice(0, -5)].tier || 'Illegal';
-					species.doublesTier = this.data.FormatsData[species.id.slice(0, -5)].doublesTier || 'Illegal';
+					species.tiers.singles = this.data.FormatsData[species.id.slice(0, -5)].tiers?.singles || 'Illegal';
+				} else if (species.changesFrom) {
+					species.tiers.singles = this.data.FormatsData[toID(species.changesFrom)].tiers?.singles || 'Illegal';
 				} else if (species.battleOnly) {
-					species.tier = this.data.FormatsData[toID(species.battleOnly)].tier || 'Illegal';
-					species.doublesTier = this.data.FormatsData[toID(species.battleOnly)].doublesTier || 'Illegal';
+					species.tiers.singles = this.data.FormatsData[toID(species.battleOnly)].tiers?.singles || 'Illegal';
 				} else {
 					const baseFormatsData = this.data.FormatsData[toID(species.baseSpecies)];
 					if (!baseFormatsData) {
 						throw new Error(`${species.baseSpecies} has no formats-data entry`);
 					}
-					species.tier = baseFormatsData.tier || 'Illegal';
-					species.doublesTier = baseFormatsData.doublesTier || 'Illegal';
+					species.tiers.singles = baseFormatsData.tiers?.singles || 'Illegal';
 				}
 			}
-			if (!species.tier) species.tier = 'Illegal';
-			if (!species.doublesTier) species.doublesTier = species.tier;
+			if (!species.tiers.doubles && (species.changesFrom || species.baseSpecies) !== species.name) {
+				if (species.baseSpecies === 'Mimikyu') {
+					species.tiers.doubles = this.data.FormatsData['mimikyu'].tiers?.doubles || 'Illegal';
+				} else if (species.id.endsWith('totem')) {
+					species.tiers.doubles = this.data.FormatsData[species.id.slice(0, -5)].tiers?.doubles || 'Illegal';
+				} else if (species.changesFrom) {
+					species.tiers.doubles = this.data.FormatsData[toID(species.changesFrom)].tiers?.doubles || 'Illegal';
+				} else if (species.battleOnly) {
+					species.tiers.doubles = this.data.FormatsData[toID(species.battleOnly)].tiers?.doubles || 'Illegal';
+				} else {
+					const baseFormatsData = this.data.FormatsData[toID(species.baseSpecies)];
+					if (!baseFormatsData) {
+						throw new Error(`${species.baseSpecies} has no formats-data entry`);
+					}
+					species.tiers.doubles = baseFormatsData.tiers?.doubles || 'Illegal';
+				}
+			}
+			if (!species.tiers.singles) species.tiers.singles = 'Illegal';
+			if (!species.tiers.doubles) species.tiers.doubles = 'Illegal';
 			if (species.gen > this.gen) {
-				species.tier = 'Illegal';
-				species.doublesTier = 'Illegal';
+				species.tiers = {
+					singles: 'Illegal',
+					doubles: 'Illegal',
+				};
 				species.isNonstandard = 'Future';
 			}
 			if (this.currentMod === 'letsgo' && !species.isNonstandard) {
@@ -412,7 +430,7 @@ export class ModdedDex {
 			if (this.gen === 1) species.bst -= species.baseStats.spd;
 		} else {
 			species = new Species({
-				id, name, exists: false, tier: 'Illegal', doublesTier: 'Illegal', isNonstandard: 'Custom',
+				id, name, exists: false, tiers: {singles: 'Illegal', doubles: 'Illegal'}, isNonstandard: 'Custom',
 			});
 		}
 		if (species.exists) this.speciesCache.set(id, species);

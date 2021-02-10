@@ -1268,11 +1268,12 @@ export class TeamValidator {
 			}
 		}
 
-		const tier = tierSpecies.tier === '(PU)' ? 'ZU' : tierSpecies.tier === '(NU)' ? 'PU' : tierSpecies.tier;
+		const tier = tierSpecies.tiers.singles === '(PU)' ? 'ZU' :
+			tierSpecies.tiers.singles === '(NU)' ? 'PU' : tierSpecies.tiers.singles;
 		const tierTag = 'pokemontag:' + toID(tier);
 		setHas[tierTag] = true;
 
-		const doublesTier = tierSpecies.doublesTier === '(DUU)' ? 'DNU' : tierSpecies.doublesTier;
+		const doublesTier = tierSpecies.tiers.doubles === '(DUU)' ? 'DNU' : tierSpecies.tiers.doubles;
 		const doublesTierTag = 'pokemontag:' + toID(doublesTier);
 		setHas[doublesTierTag] = true;
 

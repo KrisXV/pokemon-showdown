@@ -1,978 +1,1354 @@
 export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 	bulbasaur: {
 		inherit: true,
-		tier: "LC",
+		tiers: {
+			singles: "LC",
+		},
 	},
 	ivysaur: {
 		inherit: true,
-		tier: "NFE",
+		tiers: {
+			singles: "NFE",
+		},
 	},
 	venusaur: {
 		inherit: true,
 		randomBattleMoves: [],
-		tier: "OU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "OU",
+			doubles: "DOU",
+		},
 	},
 	venusaurmega: {
 		inherit: true,
 		randomBattleMoves: ["leechseed", "sludgebomb", "megadrain", "sleeppowder", "earthquake"],
-		tier: "OU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "OU",
+			doubles: "DOU",
+		},
 	},
 	charmander: {
 		inherit: true,
-		tier: "LC",
+		tiers: {
+			singles: "LC",
+		},
 	},
 	charmeleon: {
 		inherit: true,
-		tier: "NFE",
+		tiers: {
+			singles: "NFE",
+		},
 	},
 	charizard: {
 		inherit: true,
 		randomBattleMoves: [],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	charizardmegax: {
 		inherit: true,
 		randomBattleMoves: ["roost", "flareblitz", "outrage", "earthquake", "willowisp"],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	charizardmegay: {
 		inherit: true,
 		randomBattleMoves: ["airslash", "roost", "dragonpulse", "flamethrower", "fireblast"],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	squirtle: {
 		inherit: true,
-		tier: "LC",
+		tiers: {
+			singles: "LC",
+		},
 	},
 	wartortle: {
 		inherit: true,
-		tier: "NFE",
+		tiers: {
+			singles: "NFE",
+		},
 	},
 	blastoise: {
 		inherit: true,
 		randomBattleMoves: [],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	blastoisemega: {
 		inherit: true,
 		randomBattleMoves: ["icebeam", "scald", "darkpulse", "toxic", "hydropump"],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	caterpie: {
 		inherit: true,
-		tier: "LC",
+		tiers: {
+			singles: "LC",
+		},
 	},
 	metapod: {
 		inherit: true,
-		tier: "NFE",
+		tiers: {
+			singles: "NFE",
+		},
 	},
 	butterfree: {
 		inherit: true,
 		randomBattleMoves: ["bugbuzz", "quiverdance", "airslash", "sleeppowder"],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	weedle: {
 		inherit: true,
-		tier: "LC",
+		tiers: {
+			singles: "LC",
+		},
 	},
 	kakuna: {
 		inherit: true,
-		tier: "NFE",
+		tiers: {
+			singles: "NFE",
+		},
 	},
 	beedrill: {
 		inherit: true,
 		randomBattleMoves: [],
-		tier: "OU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "OU",
+			doubles: "DOU",
+		},
 	},
 	beedrillmega: {
 		inherit: true,
 		randomBattleMoves: ["drillrun", "poisonjab", "uturn", "xscissor", "brickbreak"],
-		tier: "OU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "OU",
+			doubles: "DOU",
+		},
 	},
 	pidgey: {
 		inherit: true,
-		tier: "LC",
+		tiers: {
+			singles: "LC",
+		},
 	},
 	pidgeotto: {
 		inherit: true,
-		tier: "NFE",
+		tiers: {
+			singles: "NFE",
+		},
 	},
 	pidgeot: {
 		inherit: true,
 		randomBattleMoves: [],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	pidgeotmega: {
 		inherit: true,
 		randomBattleMoves: ["airslash", "heatwave", "roost", "uturn", "toxic"],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	rattata: {
 		inherit: true,
-		tier: "LC",
+		tiers: {
+			singles: "LC",
+		},
 	},
 	rattataalola: {
 		inherit: true,
-		tier: "LC",
+		tiers: {
+			singles: "LC",
+		},
 	},
 	raticate: {
 		inherit: true,
 		randomBattleMoves: ["swordsdance", "doubleedge", "suckerpunch", "crunch", "irontail"],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	raticatealola: {
 		inherit: true,
 		randomBattleMoves: ["suckerpunch", "crunch", "swordsdance", "uturn", "doubleedge"],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	spearow: {
 		inherit: true,
-		tier: "LC",
+		tiers: {
+			singles: "LC",
+		},
 	},
 	fearow: {
 		inherit: true,
 		randomBattleMoves: ["drillpeck", "drillrun", "quickattack", "uturn", "roost"],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	ekans: {
 		inherit: true,
-		tier: "LC",
+		tiers: {
+			singles: "LC",
+		},
 	},
 	arbok: {
 		inherit: true,
 		randomBattleMoves: ["poisonjab", "earthquake", "glare", "suckerpunch", "crunch"],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	pikachu: {
 		inherit: true,
-		tier: "LC",
+		tiers: {
+			singles: "LC",
+		},
 	},
 	pikachustarter: {
 		inherit: true,
 		randomBattleMoves: ["zippyzap", "splishysplash", "thunderbolt", "calmmind", "substitute"],
 		isNonstandard: null,
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	raichu: {
 		inherit: true,
 		randomBattleMoves: ["thunderbolt", "fakeout", "brickbreak", "irontail", "substitute"],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	raichualola: {
 		inherit: true,
 		randomBattleMoves: ["psychic", "thunderbolt", "calmmind", "encore", "substitute"],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	sandshrew: {
 		inherit: true,
-		tier: "LC",
+		tiers: {
+			singles: "LC",
+		},
 	},
 	sandshrewalola: {
 		inherit: true,
-		tier: "LC",
+		tiers: {
+			singles: "LC",
+		},
 	},
 	sandslash: {
 		inherit: true,
 		randomBattleMoves: ["earthquake", "rockslide", "stealthrock", "swordsdance", "toxic"],
-		tier: "OU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "OU",
+			doubles: "DOU",
+		},
 	},
 	sandslashalola: {
 		inherit: true,
 		randomBattleMoves: ["earthquake", "iceshard", "icepunch", "swordsdance", "stealthrock", "irontail"],
-		tier: "OU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "OU",
+			doubles: "DOU",
+		},
 	},
 	nidoranf: {
 		inherit: true,
-		tier: "LC",
+		tiers: {
+			singles: "LC",
+		},
 	},
 	nidorina: {
 		inherit: true,
-		tier: "NFE",
+		tiers: {
+			singles: "NFE",
+		},
 	},
 	nidoqueen: {
 		inherit: true,
 		randomBattleMoves: ["earthquake", "stealthrock", "icebeam", "poisonjab", "dragontail"],
-		tier: "OU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "OU",
+			doubles: "DOU",
+		},
 	},
 	nidoranm: {
 		inherit: true,
-		tier: "LC",
+		tiers: {
+			singles: "LC",
+		},
 	},
 	nidorino: {
 		inherit: true,
-		tier: "NFE",
+		tiers: {
+			singles: "NFE",
+		},
 	},
 	nidoking: {
 		inherit: true,
 		randomBattleMoves: ["earthquake", "poisonjab", "stealthrock", "icepunch", "megahorn"],
-		tier: "OU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "OU",
+			doubles: "DOU",
+		},
 	},
 	clefairy: {
 		inherit: true,
-		tier: "LC",
+		tiers: {
+			singles: "LC",
+		},
 	},
 	clefable: {
 		inherit: true,
 		randomBattleMoves: ["moonblast", "calmmind", "flamethrower", "stealthrock", "thunderwave", "icebeam"],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	vulpix: {
 		inherit: true,
-		tier: "LC",
+		tiers: {
+			singles: "LC",
+		},
 	},
 	vulpixalola: {
 		inherit: true,
-		tier: "LC",
+		tiers: {
+			singles: "LC",
+		},
 	},
 	ninetales: {
 		inherit: true,
 		randomBattleMoves: ["flamethrower", "darkpulse", "nastyplot", "willowisp", "fireblast"],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	ninetalesalola: {
 		inherit: true,
 		randomBattleMoves: ["dazzlinggleam", "icebeam", "nastyplot", "darkpulse", "substitute"],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	jigglypuff: {
 		inherit: true,
-		tier: "LC",
+		tiers: {
+			singles: "LC",
+		},
 	},
 	wigglytuff: {
 		inherit: true,
 		randomBattleMoves: ["dazzlinggleam", "fireblast", "stealthrock", "icebeam", "bodyslam"],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	zubat: {
 		inherit: true,
-		tier: "LC",
+		tiers: {
+			singles: "LC",
+		},
 	},
 	golbat: {
 		inherit: true,
 		randomBattleMoves: ["toxic", "roost", "taunt", "sludgebomb", "whirlwind", "airslash", "uturn"],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	oddish: {
 		inherit: true,
-		tier: "LC",
+		tiers: {
+			singles: "LC",
+		},
 	},
 	gloom: {
 		inherit: true,
-		tier: "NFE",
+		tiers: {
+			singles: "NFE",
+		},
 	},
 	vileplume: {
 		inherit: true,
 		randomBattleMoves: ["sludgebomb", "moonblast", "sleeppowder", "megadrain", "stunspore"],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	paras: {
 		inherit: true,
-		tier: "LC",
+		tiers: {
+			singles: "LC",
+		},
 	},
 	parasect: {
 		inherit: true,
 		randomBattleMoves: ["leechlife", "spore", "leechseed", "substitute", "brickbreak"],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	venonat: {
 		inherit: true,
-		tier: "LC",
+		tiers: {
+			singles: "LC",
+		},
 	},
 	venomoth: {
 		inherit: true,
 		randomBattleMoves: ["quiverdance", "bugbuzz", "sleeppowder", "sludgebomb", "psychic"],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	diglett: {
 		inherit: true,
-		tier: "LC",
+		tiers: {
+			singles: "LC",
+		},
 	},
 	diglettalola: {
 		inherit: true,
-		tier: "LC",
+		tiers: {
+			singles: "LC",
+		},
 	},
 	dugtrio: {
 		inherit: true,
 		randomBattleMoves: ["earthquake", "rockslide", "suckerpunch", "stealthrock", "toxic"],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	dugtrioalola: {
 		inherit: true,
 		randomBattleMoves: ["earthquake", "suckerpunch", "stealthrock", "rockslide", "toxic"],
-		tier: "OU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "OU",
+			doubles: "DOU",
+		},
 	},
 	meowth: {
 		inherit: true,
-		tier: "LC",
+		tiers: {
+			singles: "LC",
+		},
 	},
 	meowthalola: {
 		inherit: true,
-		tier: "LC",
+		tiers: {
+			singles: "LC",
+		},
 	},
 	persian: {
 		inherit: true,
 		randomBattleMoves: ["fakeout", "uturn", "taunt", "headbutt", "playrough"],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	persianalola: {
 		inherit: true,
 		randomBattleMoves: ["darkpulse", "thunderbolt", "uturn", "taunt", "nastyplot"],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	psyduck: {
 		inherit: true,
-		tier: "LC",
+		tiers: {
+			singles: "LC",
+		},
 	},
 	golduck: {
 		inherit: true,
 		randomBattleMoves: ["icebeam", "psychic", "hydropump", "scald", "calmmind"],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	mankey: {
 		inherit: true,
-		tier: "LC",
+		tiers: {
+			singles: "LC",
+		},
 	},
 	primeape: {
 		inherit: true,
 		randomBattleMoves: ["uturn", "brickbreak", "earthquake", "bulkup", "rockslide"],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	growlithe: {
 		inherit: true,
-		tier: "LC",
+		tiers: {
+			singles: "LC",
+		},
 	},
 	arcanine: {
 		inherit: true,
 		randomBattleMoves: ["flareblitz", "willowisp", "crunch", "playrough", "superpower"],
-		tier: "OU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "OU",
+			doubles: "DOU",
+		},
 	},
 	poliwag: {
 		inherit: true,
-		tier: "LC",
+		tiers: {
+			singles: "LC",
+		},
 	},
 	poliwhirl: {
 		inherit: true,
-		tier: "NFE",
+		tiers: {
+			singles: "NFE",
+		},
 	},
 	poliwrath: {
 		inherit: true,
 		randomBattleMoves: ["waterfall", "bulkup", "superpower", "icepunch", "brickbreak", "earthquake"],
-		tier: "OU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "OU",
+			doubles: "DOU",
+		},
 	},
 	abra: {
 		inherit: true,
-		tier: "LC",
+		tiers: {
+			singles: "LC",
+		},
 	},
 	kadabra: {
 		inherit: true,
-		tier: "NFE",
+		tiers: {
+			singles: "NFE",
+		},
 	},
 	alakazam: {
 		inherit: true,
 		randomBattleMoves: [],
-		tier: "OU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "OU",
+			doubles: "DOU",
+		},
 	},
 	alakazammega: {
 		inherit: true,
 		randomBattleMoves: ["psychic", "shadowball", "calmmind", "dazzlinggleam", "recover"],
-		tier: "OU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "OU",
+			doubles: "DOU",
+		},
 	},
 	machop: {
 		inherit: true,
-		tier: "LC",
+		tiers: {
+			singles: "LC",
+		},
 	},
 	machoke: {
 		inherit: true,
-		tier: "NFE",
+		tiers: {
+			singles: "NFE",
+		},
 	},
 	machamp: {
 		inherit: true,
 		randomBattleMoves: ["superpower", "earthquake", "icepunch", "bulkup", "rockslide", "brickbreak"],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	bellsprout: {
 		inherit: true,
-		tier: "LC",
+		tiers: {
+			singles: "LC",
+		},
 	},
 	weepinbell: {
 		inherit: true,
-		tier: "NFE",
+		tiers: {
+			singles: "NFE",
+		},
 	},
 	victreebel: {
 		inherit: true,
 		randomBattleMoves: ["powerwhip", "suckerpunch", "poisonjab", "swordsdance", "sleeppowder"],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	tentacool: {
 		inherit: true,
-		tier: "LC",
+		tiers: {
+			singles: "LC",
+		},
 	},
 	tentacruel: {
 		inherit: true,
 		randomBattleMoves: ["sludgebomb", "scald", "icebeam", "haze"],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	geodude: {
 		inherit: true,
-		tier: "LC",
+		tiers: {
+			singles: "LC",
+		},
 	},
 	geodudealola: {
 		inherit: true,
-		tier: "LC",
+		tiers: {
+			singles: "LC",
+		},
 	},
 	graveler: {
 		inherit: true,
-		tier: "NFE",
+		tiers: {
+			singles: "NFE",
+		},
 	},
 	graveleralola: {
 		inherit: true,
-		tier: "NFE",
+		tiers: {
+			singles: "NFE",
+		},
 	},
 	golem: {
 		inherit: true,
 		randomBattleMoves: ["earthquake", "rockslide", "stealthrock", "explosion", "toxic"],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	golemalola: {
 		inherit: true,
 		randomBattleMoves: ["thunderpunch", "rockslide", "earthquake", "stealthrock", "explosion"],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	ponyta: {
 		inherit: true,
-		tier: "LC",
+		tiers: {
+			singles: "LC",
+		},
 	},
 	rapidash: {
 		inherit: true,
 		randomBattleMoves: ["flareblitz", "drillrun", "megahorn", "willowisp", "irontail"],
-		tier: "OU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "OU",
+			doubles: "DOU",
+		},
 	},
 	slowpoke: {
 		inherit: true,
-		tier: "LC",
+		tiers: {
+			singles: "LC",
+		},
 	},
 	slowbro: {
 		inherit: true,
 		randomBattleMoves: [],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	slowbromega: {
 		inherit: true,
 		randomBattleMoves: ["scald", "psychic", "calmmind", "icebeam", "toxic"],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	magnemite: {
 		inherit: true,
-		tier: "LC",
+		tiers: {
+			singles: "LC",
+		},
 	},
 	magneton: {
 		inherit: true,
 		randomBattleMoves: ["thunderbolt", "flashcannon", "thunderwave", "lightscreen", "reflect"],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	farfetchd: {
 		inherit: true,
 		randomBattleMoves: ["swordsdance", "quickattack", "fly", "razorleaf", "poisonjab"],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	doduo: {
 		inherit: true,
-		tier: "LC",
+		tiers: {
+			singles: "LC",
+		},
 	},
 	dodrio: {
 		inherit: true,
 		randomBattleMoves: ["drillpeck", "jumpkick", "swordsdance", "quickattack", "roost"],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	seel: {
 		inherit: true,
-		tier: "LC",
+		tiers: {
+			singles: "LC",
+		},
 	},
 	dewgong: {
 		inherit: true,
 		randomBattleMoves: ["icebeam", "aquajet", "iceshard", "surf", "megahorn"],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	grimer: {
 		inherit: true,
-		tier: "LC",
+		tiers: {
+			singles: "LC",
+		},
 	},
 	grimeralola: {
 		inherit: true,
-		tier: "LC",
+		tiers: {
+			singles: "LC",
+		},
 	},
 	muk: {
 		inherit: true,
 		randomBattleMoves: ["poisonjab", "firepunch", "brickbreak", "toxic", "protect"],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	mukalola: {
 		inherit: true,
 		randomBattleMoves: ["crunch", "poisonjab", "toxic", "firepunch", "megadrain"],
-		tier: "OU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "OU",
+			doubles: "DOU",
+		},
 	},
 	shellder: {
 		inherit: true,
-		tier: "LC",
+		tiers: {
+			singles: "LC",
+		},
 	},
 	cloyster: {
 		inherit: true,
 		randomBattleMoves: ["shellsmash", "icebeam", "hydropump", "surf", "iceshard"],
-		tier: "OU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "OU",
+			doubles: "DOU",
+		},
 	},
 	gastly: {
 		inherit: true,
-		tier: "LC",
+		tiers: {
+			singles: "LC",
+		},
 	},
 	haunter: {
 		inherit: true,
-		tier: "NFE",
+		tiers: {
+			singles: "NFE",
+		},
 	},
 	gengar: {
 		inherit: true,
 		randomBattleMoves: [],
-		tier: "OU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "OU",
+			doubles: "DOU",
+		},
 	},
 	gengarmega: {
 		inherit: true,
 		randomBattleMoves: ["shadowball", "sludgebomb", "thunderbolt", "willowisp", "substitute", "dazzlinggleam"],
-		tier: "Uber",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "Uber",
+			doubles: "DOU",
+		},
 	},
 	onix: {
 		inherit: true,
 		randomBattleMoves: ["stealthrock", "rockslide", "earthquake", "toxic", "dragontail"],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	drowzee: {
 		inherit: true,
-		tier: "LC",
+		tiers: {
+			singles: "LC",
+		},
 	},
 	hypno: {
 		inherit: true,
 		randomBattleMoves: ["psychic", "calmmind", "dazzlinggleam", "shadowball", "thunderwave"],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	krabby: {
 		inherit: true,
-		tier: "LC",
+		tiers: {
+			singles: "LC",
+		},
 	},
 	kingler: {
 		inherit: true,
 		randomBattleMoves: ["crabhammer", "agility", "rockslide", "xscissor", "superpower"],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	voltorb: {
 		inherit: true,
-		tier: "LC",
+		tiers: {
+			singles: "LC",
+		},
 	},
 	electrode: {
 		inherit: true,
 		randomBattleMoves: ["thunderbolt", "taunt", "thunderwave", "explosion", "reflect", "lightscreen"],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	exeggcute: {
 		inherit: true,
-		tier: "LC",
+		tiers: {
+			singles: "LC",
+		},
 	},
 	exeggutor: {
 		inherit: true,
 		randomBattleMoves: ["psychic", "megadrain", "sleeppowder", "leechseed", "sludgebomb"],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	exeggutoralola: {
 		inherit: true,
 		randomBattleMoves: ["megadrain", "dragonpulse", "flamethrower", "stunspore", "earthquake"],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	cubone: {
 		inherit: true,
-		tier: "LC",
+		tiers: {
+			singles: "LC",
+		},
 	},
 	marowak: {
 		inherit: true,
 		randomBattleMoves: ["earthquake", "stealthrock", "swordsdance", "bonemerang", "rockslide", "doubleedge"],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	marowakalola: {
 		inherit: true,
 		randomBattleMoves: ["earthquake", "flareblitz", "willowisp", "bonemerang", "swordsdance", "stealthrock", "rockslide"],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	hitmonlee: {
 		inherit: true,
 		randomBattleMoves: ["highjumpkick", "earthquake", "bulkup", "rockslide", "poisonjab"],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	hitmonchan: {
 		inherit: true,
 		randomBattleMoves: ["icepunch", "thunderpunch", "brickbreak", "firepunch", "earthquake", "bulkup"],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	lickitung: {
 		inherit: true,
 		randomBattleMoves: ["facade", "fireblast", "icebeam", "shadowball", "toxic"],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	koffing: {
 		inherit: true,
-		tier: "LC",
+		tiers: {
+			singles: "LC",
+		},
 	},
 	weezing: {
 		inherit: true,
 		randomBattleMoves: ["willowisp", "sludgebomb", "toxic", "flamethrower", "fireblast", "explosion"],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	rhyhorn: {
 		inherit: true,
-		tier: "LC",
+		tiers: {
+			singles: "LC",
+		},
 	},
 	rhydon: {
 		inherit: true,
 		randomBattleMoves: ["earthquake", "rockslide", "stealthrock", "toxic", "megahorn"],
-		tier: "OU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "OU",
+			doubles: "DOU",
+		},
 	},
 	chansey: {
 		inherit: true,
 		randomBattleMoves: ["softboiled", "seismictoss", "toxic", "stealthrock", "teleport"],
-		tier: "OU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "OU",
+			doubles: "DOU",
+		},
 	},
 	tangela: {
 		inherit: true,
 		randomBattleMoves: ["leechseed", "megadrain", "sleeppowder", "protect", "toxic"],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	kangaskhan: {
 		inherit: true,
 		randomBattleMoves: [],
-		tier: "OU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "OU",
+			doubles: "DOU",
+		},
 	},
 	kangaskhanmega: {
 		inherit: true,
 		randomBattleMoves: ["fakeout", "earthquake", "suckerpunch", "facade", "brickbreak"],
-		tier: "OU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "OU",
+			doubles: "DOU",
+		},
 	},
 	horsea: {
 		inherit: true,
-		tier: "LC",
+		tiers: {
+			singles: "LC",
+		},
 	},
 	seadra: {
 		inherit: true,
 		randomBattleMoves: ["icebeam", "scald", "dragonpulse", "agility", "toxic", "hydropump"],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	goldeen: {
 		inherit: true,
-		tier: "LC",
+		tiers: {
+			singles: "LC",
+		},
 	},
 	seaking: {
 		inherit: true,
 		randomBattleMoves: ["scald", "poisonjab", "megahorn", "drillrun", "icebeam"],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	staryu: {
 		inherit: true,
-		tier: "LC",
+		tiers: {
+			singles: "LC",
+		},
 	},
 	starmie: {
 		inherit: true,
 		randomBattleMoves: ["psychic", "thunderbolt", "icebeam", "recover", "scald", "hydropump"],
-		tier: "OU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "OU",
+			doubles: "DOU",
+		},
 	},
 	mrmime: {
 		inherit: true,
 		randomBattleMoves: ["psychic", "dazzlinggleam", "calmmind", "shadowball", "encore"],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	scyther: {
 		inherit: true,
 		randomBattleMoves: ["swordsdance", "xscissor", "wingattack", "brickbreak", "uturn"],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	jynx: {
 		inherit: true,
 		randomBattleMoves: ["icebeam", "psychic", "lovelykiss", "calmmind", "shadowball"],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	electabuzz: {
 		inherit: true,
 		randomBattleMoves: ["thunderbolt", "icepunch", "psychic", "thunderwave", "brickbreak"],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	magmar: {
 		inherit: true,
 		randomBattleMoves: ["psychic", "flamethrower", "fireblast", "willowisp", "clearsmog", "thunderpunch"],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	pinsir: {
 		inherit: true,
 		randomBattleMoves: [],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	pinsirmega: {
 		inherit: true,
 		randomBattleMoves: ["xscissor", "earthquake", "swordsdance", "rockslide", "superpower"],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	tauros: {
 		inherit: true,
 		randomBattleMoves: ["earthquake", "doubleedge", "rockslide", "fireblast", "toxic"],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	magikarp: {
 		inherit: true,
-		tier: "LC",
+		tiers: {
+			singles: "LC",
+		},
 	},
 	gyarados: {
 		inherit: true,
 		randomBattleMoves: [],
-		tier: "OU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "OU",
+			doubles: "DOU",
+		},
 	},
 	gyaradosmega: {
 		inherit: true,
 		randomBattleMoves: ["waterfall", "crunch", "earthquake", "thunderwave", "substitute"],
-		tier: "OU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "OU",
+			doubles: "DOU",
+		},
 	},
 	lapras: {
 		inherit: true,
 		randomBattleMoves: ["icebeam", "thunderbolt", "surf", "hydropump", "toxic"],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	ditto: {
 		inherit: true,
 		randomBattleMoves: ["transform"],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	eevee: {
 		inherit: true,
-		tier: "LC",
+		tiers: {
+			singles: "LC",
+		},
 	},
 	eeveestarter: {
 		inherit: true,
 		randomBattleMoves: ["sparklyswirl", "sizzlyslide", "sappyseed", "protect", "buzzybuzz", "bouncybubble"],
 		isNonstandard: null,
-		tier: "OU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "OU",
+			doubles: "DOU",
+		},
 	},
 	vaporeon: {
 		inherit: true,
 		randomBattleMoves: ["scald", "toxic", "icebeam", "protect", "rest"],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	jolteon: {
 		inherit: true,
 		randomBattleMoves: ["thunderbolt", "shadowball", "thunderwave", "toxic", "substitute"],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	flareon: {
 		inherit: true,
 		randomBattleMoves: ["flareblitz", "superpower", "quickattack", "toxic", "irontail"],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	porygon: {
 		inherit: true,
 		randomBattleMoves: ["triattack", "recover", "icebeam", "toxic", "psychic"],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	omanyte: {
 		inherit: true,
-		tier: "LC",
+		tiers: {
+			singles: "LC",
+		},
 	},
 	omastar: {
 		inherit: true,
 		randomBattleMoves: ["shellsmash", "icebeam", "hydropump", "scald", "rockslide"],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	kabuto: {
 		inherit: true,
-		tier: "LC",
+		tiers: {
+			singles: "LC",
+		},
 	},
 	kabutops: {
 		inherit: true,
 		randomBattleMoves: ["aquajet", "swordsdance", "rockslide", "waterfall", "superpower", "stealthrock"],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	aerodactyl: {
 		inherit: true,
 		randomBattleMoves: [],
-		tier: "OU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "OU",
+			doubles: "DOU",
+		},
 	},
 	aerodactylmega: {
 		inherit: true,
 		randomBattleMoves: ["rockslide", "earthquake", "stealthrock", "taunt", "crunch", "roost"],
-		tier: "OU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "OU",
+			doubles: "DOU",
+		},
 	},
 	snorlax: {
 		inherit: true,
 		randomBattleMoves: ["earthquake", "bodyslam", "rest", "crunch", "toxic"],
-		tier: "OU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "OU",
+			doubles: "DOU",
+		},
 	},
 	articuno: {
 		inherit: true,
 		randomBattleMoves: ["icebeam", "roost", "toxic", "uturn", "substitute"],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	zapdos: {
 		inherit: true,
 		randomBattleMoves: ["thunderbolt", "roost", "uturn", "toxic", "drillpeck"],
-		tier: "OU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "OU",
+			doubles: "DOU",
+		},
 	},
 	moltres: {
 		inherit: true,
 		randomBattleMoves: ["roost", "airslash", "flamethrower", "fireblast", "willowisp", "uturn"],
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	dratini: {
 		inherit: true,
-		tier: "LC",
+		tiers: {
+			singles: "LC",
+		},
 	},
 	dragonair: {
 		inherit: true,
-		tier: "NFE",
+		tiers: {
+			singles: "NFE",
+		},
 	},
 	dragonite: {
 		inherit: true,
 		randomBattleMoves: ["outrage", "earthquake", "agility", "roost", "fireblast"],
-		tier: "OU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "OU",
+			doubles: "DOU",
+		},
 	},
 	mewtwo: {
 		inherit: true,
 		randomBattleMoves: [],
-		tier: "Uber",
-		doublesTier: "DUber",
+		tiers: {
+			singles: "Uber",
+			doubles: "DUber",
+		},
 	},
 	mewtwomegax: {
 		inherit: true,
 		randomBattleMoves: ["bulkup", "substitute", "brickbreak", "earthquake", "icepunch"],
-		tier: "Uber",
-		doublesTier: "DUber",
+		tiers: {
+			singles: "Uber",
+			doubles: "DUber",
+		},
 	},
 	mewtwomegay: {
 		inherit: true,
 		randomBattleMoves: ["calmmind", "psychic", "fireblast", "icebeam", "shadowball", "recover"],
-		tier: "Uber",
-		doublesTier: "DUber",
+		tiers: {
+			singles: "Uber",
+			doubles: "DUber",
+		},
 	},
 	mew: {
 		inherit: true,
 		randomBattleMoves: ["roost", "psychic", "willowisp", "flamethrower", "stealthrock", "nastyplot"],
-		tier: "OU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "OU",
+			doubles: "DOU",
+		},
 	},
 	meltan: {
 		inherit: true,
 		randomBattleMoves: ["flashcannon", "thunderbolt", "toxic", "protect"],
 		isNonstandard: null,
-		tier: "UU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "UU",
+			doubles: "DOU",
+		},
 	},
 	melmetal: {
 		inherit: true,
 		randomBattleMoves: ["doubleironbash", "earthquake", "rockslide", "icepunch", "thunderwave"],
 		isNonstandard: null,
-		tier: "OU",
-		doublesTier: "DOU",
+		tiers: {
+			singles: "OU",
+			doubles: "DOU",
+		},
 	},
 };

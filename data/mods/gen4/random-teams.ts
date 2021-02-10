@@ -630,7 +630,7 @@ export class RandomGen4Teams extends RandomGen5Teams {
 		const customScale: {[k: string]: number} = {
 			Delibird: 100, Ditto: 100, 'Farfetch\u2019d': 100, Unown: 100,
 		};
-		let level = levelScale[species.tier] || (species.nfe ? 90 : 80);
+		let level = levelScale[species.tiers.singles] || (species.nfe ? 90 : 80);
 		if (customScale[species.name]) level = customScale[species.name];
 
 		// Prepare optimal HP

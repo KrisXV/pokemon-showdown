@@ -147,7 +147,7 @@ export const Formats: {[k: string]: FormatData} = {
 				if (this.ruleTable.has(`+pokemon:${species.id}`)) return;
 				return [`${set.name || set.species} does not exist in the National Dex.`];
 			}
-			if (species.tier === "Unreleased") {
+			if (species.tiers.singles === "Unreleased") {
 				const basePokemon = this.toID(species.baseSpecies);
 				if (this.ruleTable.has(`+pokemon:${species.id}`) || this.ruleTable.has(`+basepokemon:${basePokemon}`)) {
 					return;

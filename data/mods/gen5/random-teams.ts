@@ -574,7 +574,7 @@ export class RandomGen5Teams extends RandomGen6Teams {
 		const customScale: {[forme: string]: number} = {
 			Delibird: 100, 'Farfetch\u2019d': 100, Luvdisc: 100, Unown: 100,
 		};
-		let level = levelScale[species.tier] || (species.nfe ? 90 : 80);
+		let level = levelScale[species.tiers.singles] || (species.nfe ? 90 : 80);
 		if (customScale[species.name]) level = customScale[species.name];
 
 		// Prepare optimal HP
@@ -657,7 +657,7 @@ export class RandomGen5Teams extends RandomGen6Teams {
 			// Illusion shouldn't be in the last slot
 			if (species.name === 'Zoroark' && pokemon.length > 4) continue;
 
-			const tier = species.tier;
+			const tier = species.tiers.singles;
 
 			// Limit two Pokemon per tier
 			if (this.gen === 5 && !isMonotype && tierCount[tier] > 1) continue;

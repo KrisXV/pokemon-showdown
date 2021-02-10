@@ -909,9 +909,9 @@ function runDexsearch(target: string, cmd: string, canAll: boolean, message: str
 					species.isNonstandard &&
 					!["Custom", "Glitch", "Pokestar"].includes(species.isNonstandard)
 				) ||
-				(species.tier !== 'Unreleased' && species.tier !== 'Illegal')
+				(species.tiers.singles !== 'Unreleased' && species.tiers.singles !== 'Illegal')
 			) &&
-			(!species.tier.startsWith("CAP") || capSearch) &&
+			(!species.tiers.singles.startsWith("CAP") || capSearch) &&
 			megaSearchResult &&
 			gmaxSearchResult &&
 			fullyEvolvedSearchResult
@@ -949,7 +949,7 @@ function runDexsearch(target: string, cmd: string, canAll: boolean, message: str
 			}
 
 			if (alts.tiers && Object.keys(alts.tiers).length) {
-				let tier = dex[mon].tier;
+				let tier = dex[mon].tiers.singles;
 				if (tier.startsWith('(') && tier !== '(PU)' && tier !== '(NU)') tier = tier.slice(1, -1) as TierTypes.Singles;
 				// if (tier === 'New') tier = 'OU';
 				if (alts.tiers[tier]) continue;
@@ -979,7 +979,7 @@ function runDexsearch(target: string, cmd: string, canAll: boolean, message: str
 			}
 
 			if (alts.doublesTiers && Object.keys(alts.doublesTiers).length) {
-				let tier = dex[mon].doublesTier;
+				let tier = dex[mon].tiers.doubles;
 				if (tier && tier.startsWith('(') && tier !== '(DUU)') tier = tier.slice(1, -1) as TierTypes.Doubles;
 				if (alts.doublesTiers[tier]) continue;
 				if (Object.values(alts.doublesTiers).includes(false) && alts.doublesTiers[tier] !== false) continue;

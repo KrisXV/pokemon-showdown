@@ -19,19 +19,20 @@ function generateTeam(generator = '') {
 	case 'ou':
 		potentialPokemon = potentialPokemon.filter(mon => {
 			const species = Dex.getSpecies(mon);
-			return species.tier === 'OU';
+			return species.tiers.singles === 'OU';
 		}).concat(potentialPokemon.filter(mon => {
 			// There is probably a better way to get the ratios right, oh well.
 			const species = Dex.getSpecies(mon);
-			return species.tier === 'OU' || species.tier === 'UU';
+			return species.tiers.singles === 'OU' || species.tiers.singles === 'UU';
 		}));
 		break;
 	case 'ag':
 		potentialPokemon = potentialPokemon.filter(mon => {
 			const species = Dex.getSpecies(mon);
-			const unviable = species.tier === 'NFE' || species.tier === 'PU' ||
-				species.tier === '(PU)' || species.tier.startsWith("LC");
-			const illegal = species.tier === 'Unreleased' || species.tier === 'Illegal' || species.tier.startsWith("CAP");
+			const unviable = species.tiers.singles === 'NFE' || species.tiers.singles === 'PU' ||
+				species.tiers.singles === '(PU)' || species.tiers.singles.startsWith("LC");
+			const illegal = species.tiers.singles === 'Unreleased' || species.tiers.singles === 'Illegal' ||
+				species.tiers.singles.startsWith("CAP");
 			return !(unviable || illegal);
 		});
 		speciesClause = false;
@@ -39,8 +40,9 @@ function generateTeam(generator = '') {
 	default:
 		potentialPokemon = potentialPokemon.filter(mon => {
 			const species = Dex.getSpecies(mon);
-			const op = species.tier === 'AG' || species.tier === 'Uber' || species.tier.slice(1, -1) === 'Uber';
-			const unviable = species.tier === 'Illegal' || species.tier.includes("LC");
+			const op = species.tiers.singles === 'AG' || species.tiers.singles === 'Uber' ||
+				species.tiers.singles.slice(1, -1) === 'Uber';
+			const unviable = species.tiers.singles === 'Illegal' || species.tiers.singles.includes("LC");
 			return !(op || unviable);
 		});
 		potentialPokemon.push('miltank', 'miltank', 'miltank', 'miltank'); // 5x chance for miltank for flavor purposes.

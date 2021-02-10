@@ -50,10 +50,10 @@ export class RuleTable extends Map<string, string> {
 		if (this.has(`-pokemon:${species.id}`)) return true;
 		if (this.has(`+basepokemon:${toID(species.baseSpecies)}`)) return false;
 		if (this.has(`-basepokemon:${toID(species.baseSpecies)}`)) return true;
-		const tier = species.tier === '(PU)' ? 'ZU' : species.tier === '(NU)' ? 'PU' : species.tier;
+		const tier = species.tiers.singles === '(PU)' ? 'ZU' : species.tiers.singles === '(NU)' ? 'PU' : species.tiers.singles;
 		if (this.has(`+pokemontag:${toID(tier)}`)) return false;
 		if (this.has(`-pokemontag:${toID(tier)}`)) return true;
-		const doublesTier = species.doublesTier === '(DUU)' ? 'DNU' : species.doublesTier;
+		const doublesTier = species.tiers.doubles === '(DUU)' ? 'DNU' : species.tiers.doubles;
 		if (this.has(`+pokemontag:${toID(doublesTier)}`)) return false;
 		if (this.has(`-pokemontag:${toID(doublesTier)}`)) return true;
 		return this.has(`-pokemontag:allpokemon`);
@@ -69,10 +69,10 @@ export class RuleTable extends Map<string, string> {
 		if (this.has(`*pokemon:${species.id}`)) return true;
 		if (this.has(`+basepokemon:${toID(species.baseSpecies)}`)) return false;
 		if (this.has(`*basepokemon:${toID(species.baseSpecies)}`)) return true;
-		const tier = species.tier === '(PU)' ? 'ZU' : species.tier === '(NU)' ? 'PU' : species.tier;
+		const tier = species.tiers.singles === '(PU)' ? 'ZU' : species.tiers.singles === '(NU)' ? 'PU' : species.tiers.singles;
 		if (this.has(`+pokemontag:${toID(tier)}`)) return false;
 		if (this.has(`*pokemontag:${toID(tier)}`)) return true;
-		const doublesTier = species.doublesTier === '(DUU)' ? 'DNU' : species.doublesTier;
+		const doublesTier = species.tiers.doubles === '(DUU)' ? 'DNU' : species.tiers.doubles;
 		if (this.has(`+pokemontag:${toID(doublesTier)}`)) return false;
 		if (this.has(`*pokemontag:${toID(doublesTier)}`)) return true;
 		return this.has(`*pokemontag:allpokemon`);

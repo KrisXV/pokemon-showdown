@@ -110,94 +110,94 @@ export const Tags: {[id: string]: TagData} = {
 	// -----
 	uber: {
 		name: "Uber",
-		pokemonFilter: species => species.tier === 'Uber',
+		pokemonFilter: species => species.tiers.singles === 'Uber',
 	},
 	ou: {
 		name: "OU",
-		pokemonFilter: species => species.tier === 'OU',
+		pokemonFilter: species => species.tiers.singles === 'OU',
 	},
 	uubl: {
 		name: "UUBL",
-		pokemonFilter: species => species.tier === 'UUBL',
+		pokemonFilter: species => species.tiers.singles === 'UUBL',
 	},
 	uu: {
 		name: "UU",
-		pokemonFilter: species => species.tier === 'UU',
+		pokemonFilter: species => species.tiers.singles === 'UU',
 	},
 	rubl: {
 		name: "RUBL",
-		pokemonFilter: species => species.tier === 'RUBL',
+		pokemonFilter: species => species.tiers.singles === 'RUBL',
 	},
 	ru: {
 		name: "RU",
-		pokemonFilter: species => species.tier === 'RU',
+		pokemonFilter: species => species.tiers.singles === 'RU',
 	},
 	nubl: {
 		name: "NUBL",
-		pokemonFilter: species => species.tier === 'NUBL',
+		pokemonFilter: species => species.tiers.singles === 'NUBL',
 	},
 	nu: {
 		name: "NU",
-		pokemonFilter: species => species.tier === 'NU',
+		pokemonFilter: species => species.tiers.singles === 'NU',
 	},
 	publ: {
 		name: "PUBL",
-		pokemonFilter: species => species.tier === 'PUBL',
+		pokemonFilter: species => species.tiers.singles === 'PUBL',
 	},
 	pu: {
 		name: "PU",
-		pokemonFilter: species => species.tier === 'PU',
+		pokemonFilter: species => species.tiers.singles === 'PU',
 	},
 	zu: {
 		name: "ZU",
-		pokemonFilter: species => species.tier === '(PU)',
+		pokemonFilter: species => species.tiers.singles === '(PU)',
 	},
 	nfe: {
 		name: "NFE",
-		pokemonFilter: species => species.tier === 'NFE',
+		pokemonFilter: species => species.tiers.singles === 'NFE',
 	},
 	lc: {
 		name: "LC",
-		pokemonFilter: species => species.doublesTier === 'LC',
+		pokemonFilter: species => species.tiers.doubles === 'LC',
 	},
 	cap: {
 		name: "CAP",
-		pokemonFilter: species => species.tier === 'CAP',
+		pokemonFilter: species => species.tiers.singles === 'CAP',
 	},
 	caplc: {
 		name: "CAP LC",
-		pokemonFilter: species => species.tier === 'CAP LC',
+		pokemonFilter: species => species.tiers.singles === 'CAP LC',
 	},
 	capnfe: {
 		name: "CAP NFE",
-		pokemonFilter: species => species.tier === 'CAP NFE',
+		pokemonFilter: species => species.tiers.singles === 'CAP NFE',
 	},
 	ag: {
 		name: "AG",
-		pokemonFilter: species => species.tier === 'AG',
+		pokemonFilter: species => species.tiers.singles === 'AG',
 	},
 
 	// Doubles tiers
 	// -------------
 	duber: {
 		name: "DUber",
-		pokemonFilter: species => species.doublesTier === 'DUber',
+		pokemonFilter: species => species.tiers.doubles === 'DUber',
 	},
 	dou: {
 		name: "DOU",
-		pokemonFilter: species => species.doublesTier === 'DOU',
+		pokemonFilter: species => species.tiers.doubles === 'DOU',
 	},
 	dbl: {
 		name: "DBL",
-		pokemonFilter: species => species.doublesTier === 'DBL',
+		pokemonFilter: species => species.tiers.doubles === 'DBL',
 	},
 	duu: {
 		name: "DUU",
-		pokemonFilter: species => species.doublesTier === 'DUU',
+		pokemonFilter: species => species.tiers.doubles === 'DUU',
 	},
 	dnu: {
 		name: "DNU",
-		pokemonFilter: species => species.doublesTier === '(DUU)',
+		pokemonFilter: species => species.tiers.doubles === '(DUU)',
 	},
 
 	// Legality tags

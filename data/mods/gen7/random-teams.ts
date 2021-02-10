@@ -959,7 +959,7 @@ export class RandomGen7Teams extends RandomTeams {
 				// Holistic judgement
 				'Castform-Rainy': 100, 'Castform-Snowy': 100, 'Castform-Sunny': 100, Delibird: 100, Spinda: 100, Unown: 100,
 			};
-			const tier = toID(species.tier).replace('bl', '');
+			const tier = toID(species.tiers.singles).replace('bl', '');
 			level = levelScale[tier] || (species.nfe ? 90 : 80);
 			if (customScale[species.name]) level = customScale[species.name];
 		} else {
@@ -1107,7 +1107,7 @@ export class RandomGen7Teams extends RandomTeams {
 					if (species.otherFormes.includes(species.name + '-Mega') || species.otherFormes.includes(species.name + '-Mega-X')) continue;
 				}
 
-				const tier = species.tier;
+				const tier = species.tiers.singles;
 				const types = species.types;
 				const typeCombo = types.slice().sort().join();
 
@@ -1354,8 +1354,8 @@ export class RandomGen7Teams extends RandomTeams {
 
 			// Lessen the need of deleting sets of Pokemon after tier shifts
 			if (
-				chosenTier in tierValues && species.tier in tierValues &&
-				tierValues[species.tier] > tierValues[chosenTier]
+				chosenTier in tierValues && species.tiers.singles in tierValues &&
+				tierValues[species.tiers.singles] > tierValues[chosenTier]
 			) continue;
 
 			const speciesFlags = this.randomFactorySets[chosenTier][species.id].flags;
