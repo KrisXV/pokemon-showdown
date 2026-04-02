@@ -68,10 +68,6 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		inherit: true,
 		abilities: { 0: "Dark Aura" },
 	},
-	excadrillmega: {
-		inherit: true,
-		abilities: { 0: "Sand Rush" },
-	},
 	golurkmega: {
 		inherit: true,
 		abilities: { 0: "Adaptability" },
@@ -159,10 +155,6 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	falinksmega: {
 		inherit: true,
 		abilities: { 0: "Dauntless Shield" },
-	},
-	scovillainmega: {
-		inherit: true,
-		abilities: { 0: "Contrary" },
 	},
 	glimmoramega: {
 		inherit: true,

@@ -1297,6 +1297,17 @@ export class Battle {
 		return !!move.flags['contact'];
 	}
 
+	checkMoveBreaksProtect(move: ActiveMove, attacker: Pokemon, defender: Pokemon, blocksStatus = false) {
+		if (move.flags['protect'] && !(blocksStatus && move.category === 'Status')) {
+			return false;
+		}
+		if ((move.isZ || move.isMax || attacker.hasAbility('piercingdrill')) &&
+			!['gmaxoneblow', 'gmaxrapidflow'].includes(move.id)) {
+			defender.getMoveHitData(move).brokeProtect = true;
+		}
+		return true;
+	}
+
 	skillSwap(source: Pokemon, target: Pokemon) {
 		if (source.fainted || target.fainted) return false;
 		if (source.volatiles['dynamax'] || target.volatiles['dynamax']) return false;
