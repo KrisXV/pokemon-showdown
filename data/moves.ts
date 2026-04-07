@@ -2038,7 +2038,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			},
 			onTryHitPriority: 3,
 			onTryHit(target, source, move) {
-				if (this.checkMoveBreaksProtect(move, source, target, true)) return;
+				if (this.checkMoveBreaksProtect(move, source, target, false)) return;
 				if (move.smartTarget) {
 					move.smartTarget = false;
 				} else {
@@ -9936,7 +9936,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			},
 			onTryHitPriority: 3,
 			onTryHit(target, source, move) {
-				if (this.checkMoveBreaksProtect(move, source, target, true)) return;
+				if (this.checkMoveBreaksProtect(move, source, target, false)) return;
 				if (move.smartTarget) {
 					move.smartTarget = false;
 				} else {
@@ -12910,7 +12910,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			},
 			onTryHitPriority: 3,
 			onTryHit(target, source, move) {
-				if (this.checkMoveBreaksProtect(move, source, target, true)) return;
+				if (this.checkMoveBreaksProtect(move, source, target, false)) return;
 				if (move.smartTarget) {
 					move.smartTarget = false;
 				} else {
@@ -16446,7 +16446,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			},
 			onTryHitPriority: 3,
 			onTryHit(target, source, move) {
-				if (this.checkMoveBreaksProtect(move, source, target, true)) return;
+				if (this.checkMoveBreaksProtect(move, source, target, false)) return;
 				if (move.smartTarget) {
 					move.smartTarget = false;
 				} else {
@@ -20865,7 +20865,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				if (move?.target !== 'allAdjacent' && move.target !== 'allAdjacentFoes') {
 					return;
 				}
-				if (this.checkMoveBreaksProtect(move, source, target)) return;
+				if (this.checkMoveBreaksProtect(move, source, target, false)) return;
 				this.add('-activate', target, 'move: Wide Guard');
 				const lockedmove = source.getVolatile('lockedmove');
 				if (lockedmove) {

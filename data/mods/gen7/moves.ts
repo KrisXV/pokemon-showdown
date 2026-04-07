@@ -498,7 +498,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		condition: {
 			inherit: true,
 			onTryHit(target, source, move) {
-				if (this.checkMoveBreaksProtect(move, source, target, true)) return;
+				if (this.checkMoveBreaksProtect(move, source, target, false)) return;
 				this.add('-activate', target, 'move: Protect');
 				const lockedmove = source.getVolatile('lockedmove');
 				if (lockedmove) {

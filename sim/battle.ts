@@ -1297,8 +1297,8 @@ export class Battle {
 		return !!move.flags['contact'];
 	}
 
-	checkMoveBreaksProtect(move: ActiveMove, attacker: Pokemon, defender: Pokemon, blockStatus = false) {
-		if (move.flags['protect'] && !(blockStatus && move.category === 'Status')) {
+	checkMoveBreaksProtect(move: ActiveMove, attacker: Pokemon, defender: Pokemon, blockStatus = true) {
+		if (move.flags['protect'] && (move.category !== 'Status' || blockStatus)) {
 			return false;
 		}
 		if ((move.isZ || move.isMax || attacker.hasAbility('piercingdrill')) &&
