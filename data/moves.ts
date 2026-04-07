@@ -20865,7 +20865,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				if (move?.target !== 'allAdjacent' && move.target !== 'allAdjacentFoes') {
 					return;
 				}
-				if (this.checkMoveBreaksProtect(move, source, target, false)) return;
+				if (this.checkMoveBreaksProtect(move, source, target)) return;
 				this.add('-activate', target, 'move: Wide Guard');
 				const lockedmove = source.getVolatile('lockedmove');
 				if (lockedmove) {
