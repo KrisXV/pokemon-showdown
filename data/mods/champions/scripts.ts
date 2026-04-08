@@ -14,7 +14,7 @@ export const Scripts: ModdedBattleScriptsData = {
 		if (move.flags['protect'] && (move.category !== 'Status' || blockStatus)) {
 			return false;
 		}
-		if ((move.isZOrMaxPowered || attacker.hasAbility(['piercingdrill', 'unseenfist']) &&
+		if ((move.isZOrMaxPowered || attacker.hasAbility(['piercingdrill', 'unseenfist'])) &&
 			!['gmaxoneblow', 'gmaxrapidflow'].includes(move.id)) {
 			defender.getMoveHitData(move).brokeProtect = true;
 		}
