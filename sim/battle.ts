@@ -1301,7 +1301,7 @@ export class Battle {
 		if (move.flags['protect'] && (move.category !== 'Status' || blockStatus)) {
 			return false;
 		}
-		if (move.isZOrMaxPowered || attacker.hasAbility('piercingdrill') &&
+		if ((move.isZOrMaxPowered || attacker.hasAbility('piercingdrill')) &&
 			!['gmaxoneblow', 'gmaxrapidflow'].includes(move.id)) {
 			defender.getMoveHitData(move).brokeProtect = true;
 		}
