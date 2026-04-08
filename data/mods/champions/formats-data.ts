@@ -3265,6 +3265,10 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	greninjabond: {
+		isNonstandard: "Past",
+		tier: "Illegal",
+	},
 	greninjamega: {
 		tier: "OU",
 	},
