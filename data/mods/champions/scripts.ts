@@ -9,6 +9,16 @@ export const Scripts: ModdedBattleScriptsData = {
 	},
 	calculatePP(move, ppUps) {
 		return move.noPPBoosts ? move.pp : (move.pp / 5 + 1) * 4;
+  },
+	checkMoveBreaksProtect(move: ActiveMove, attacker: Pokemon, defender: Pokemon, blockStatus = true) {
+		if (move.flags['protect'] && (move.category !== 'Status' || blockStatus)) {
+			return false;
+		}
+		if ((move.isZOrMaxPowered || attacker.hasAbility(['piercingdrill', 'unseenfist']) &&
+			!['gmaxoneblow', 'gmaxrapidflow'].includes(move.id)) {
+			defender.getMoveHitData(move).brokeProtect = true;
+		}
+		return true;
 	},
 	pokemon: {
 		getMoves(lockedMove, restrictData) {
