@@ -46,7 +46,7 @@ export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDa
 		onBeforeMove(pokemon, target, move) {
 			if (move.flags['defrost'] && !(move.id === 'burnup' && !pokemon.hasType('Fire'))) return;
 			pokemon.statusState.time--;
-			if (this.randomChance(1, 4) || pokemon.statusState.time <= 0) {
+			if (pokemon.statusState.time <= 0 || this.randomChance(1, 4)) {
 				pokemon.cureStatus();
 				return;
 			}
