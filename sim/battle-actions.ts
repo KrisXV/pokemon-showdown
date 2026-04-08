@@ -1824,8 +1824,7 @@ export class BattleActions {
 		// Final modifier. Modifiers that modify damage after min damage check, such as Life Orb.
 		baseDamage = this.battle.runEvent('ModifyDamage', pokemon, target, move, baseDamage);
 
-		// CFZ-moves completely bypass Protect
-		if (!((move.isZ || move.maxMove) && !move.isZOrMaxPowered) && target.getMoveHitData(move).brokeProtect) {
+		if (move.isZOrMaxPowered && target.getMoveHitData(move).brokeProtect) {
 			baseDamage = this.battle.modify(baseDamage, 0.25);
 			if (move.isZOrMaxPowered) this.battle.add('-zbroken', target);
 		}
