@@ -9,7 +9,7 @@ export const Scripts: ModdedBattleScriptsData = {
 	},
 	calculatePP(move, ppUps) {
 		return move.noPPBoosts ? move.pp : (move.pp / 5 + 1) * 4;
-  },
+	},
 	checkMoveBreaksProtect(move: ActiveMove, attacker: Pokemon, defender: Pokemon, blockStatus = true) {
 		if (move.flags['protect'] && (move.category !== 'Status' || blockStatus)) {
 			return false;
