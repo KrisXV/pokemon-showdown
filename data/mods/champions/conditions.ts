@@ -30,9 +30,23 @@ export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDa
 	},
 	frz: {
 		inherit: true,
+		onStart(target, source, sourceEffect) {
+			if (sourceEffect && sourceEffect.effectType === 'Ability') {
+				this.add('-status', target, 'frz', '[from] ability: ' + sourceEffect.name, `[of] ${source}`);
+			} else {
+				this.add('-status', target, 'frz');
+			}
+			if (target.species.name === 'Shaymin-Sky' && target.baseSpecies.baseSpecies === 'Shaymin') {
+				target.formeChange('Shaymin', this.effect, true);
+			}
+
+			this.effectState.startTime = 3;
+			this.effectState.time = this.effectState.startTime;
+		},
 		onBeforeMove(pokemon, target, move) {
 			if (move.flags['defrost'] && !(move.id === 'burnup' && !pokemon.hasType('Fire'))) return;
-			if (this.randomChance(1, 4)) {
+			pokemon.statusState.time--;
+			if (this.randomChance(1, 4) || pokemon.statusState.time <= 0) {
 				pokemon.cureStatus();
 				return;
 			}
