@@ -2737,7 +2737,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		types: ["Water", "Psychic"],
 		gender: "N",
 		baseStats: { hp: 60, atk: 100, def: 105, spa: 130, spd: 105, spe: 120 },
-		abilities: { 0: "Huger Power" },
+		abilities: { 0: "Huge Power" },
 		heightm: 2.3,
 		weightkg: 80,
 		color: "Purple",
