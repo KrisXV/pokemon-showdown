@@ -1,12 +1,28 @@
 export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
+	anchorshot: {
+		inherit: true,
+		basePower: 90,
+	},
 	appleacid: {
 		inherit: true,
 		basePower: 90,
+	},
+	astralbarrage: {
+		inherit: true,
+		basePower: 110,
 	},
 	beakblast: {
 		inherit: true,
 		basePower: 120,
 		pp: 5,
+	},
+	bloodmoon: {
+		inherit: true,
+		basePower: 130,
+	},
+	boltbeak: {
+		inherit: true,
+		basePower: 80,
 	},
 	bonerush: {
 		inherit: true,
@@ -37,6 +53,10 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		inherit: true,
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, slicing: 1 },
 	},
+	dragonhammer: {
+		inherit: true,
+		basePower: 100,
+	},
 	firelash: {
 		inherit: true,
 		basePower: 90,
@@ -45,6 +65,15 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		inherit: true,
 		basePower: 100,
 	},
+	fishiousrend: {
+		inherit: true,
+		basePower: 80,
+	},
+	geargrind: {
+		inherit: true,
+		accuracy: 90,
+		basePower: 60,
+	},
 	gravapple: {
 		inherit: true,
 		basePower: 90,
@@ -52,6 +81,10 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	growth: {
 		inherit: true,
 		type: "Grass",
+	},
+	hyperdrill: {
+		inherit: true,
+		basePower: 120,
 	},
 	infernalparade: {
 		inherit: true,
@@ -89,6 +122,10 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		inherit: true,
 		basePower: 90,
 	},
+	revelationdance: {
+		inherit: true,
+		basePower: 100,
+	},
 	saltcure: {
 		inherit: true,
 		condition: {
@@ -106,6 +143,10 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		inherit: true,
 		type: "Steel",
 	},
+	snipeshot: {
+		inherit: true,
+		basePower: 85,
+	},
 	spiritshackle: {
 		inherit: true,
 		basePower: 90,
@@ -119,6 +160,10 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		boosts: {
 			spe: -2,
 		},
+	},
+	tripledive: {
+		inherit: true,
+		basePower: 35,
 	},
 	tropkick: {
 		inherit: true,
