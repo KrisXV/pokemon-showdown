@@ -217,11 +217,16 @@ export const Scripts: ModdedBattleScriptsData = {
 			}
 			const pokemonOriginalHP = pokemon.hp;
 			if (damagedDamage.length && !isSecondary && !isSelf) {
-				this.battle.runEvent('DamagingHit', damagedTargets, pokemon, move, damagedDamage);
+				if (this.battle.gen >= 5) {
+					this.battle.runEvent('DamagingHit', damagedTargets, pokemon, move, damagedDamage);
+				}
 				if (moveData.onAfterHit) {
 					for (const t of damagedTargets) {
 						this.battle.singleEvent('AfterHit', moveData, {}, t, pokemon, move);
 					}
+				}
+				if (this.battle.gen < 4) {
+					this.battle.runEvent('DamagingHit', damagedTargets, pokemon, move, damagedDamage);
 				}
 				if (pokemon.hp && pokemon.hp <= pokemon.maxhp / 2 && pokemonOriginalHP > pokemon.maxhp / 2) {
 					this.battle.runEvent('EmergencyExit', pokemon);
