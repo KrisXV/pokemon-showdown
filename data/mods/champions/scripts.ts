@@ -108,7 +108,7 @@ export const Scripts: ModdedBattleScriptsData = {
 			}
 			return true;
 		},
-		// Disable Fake Out if it's not the first turn acting
+		// Disable Fake Out if the user has already acted since switching in
 		getMoves(lockedMove, restrictData) {
 			if (lockedMove) {
 				lockedMove = toID(lockedMove);
