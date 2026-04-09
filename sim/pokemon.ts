@@ -2189,6 +2189,7 @@ export class Pokemon {
 		case 'primordialsea':
 			if (this.hasItem('utilityumbrella')) return '';
 		}
+		// TODO: check interactions of Mega Sol with Utility Umbrella and Desolate Land
 		if (this.hasAbility('megasol') && this.battle.activePokemon === this && weather !== 'sunnyday') {
 			if (message) this.battle.add('-activate', this, 'ability: Mega Sol');
 			return 'sunnyday';
