@@ -1,4 +1,17 @@
 export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
+	appleacid: {
+		inherit: true,
+		basePower: 90,
+	},
+	beakblast: {
+		inherit: true,
+		basePower: 120,
+		pp: 5,
+	},
+	bonerush: {
+		inherit: true,
+		basePower: 30,
+	},
 	crabhammer: {
 		inherit: true,
 		accuracy: 95,
@@ -20,6 +33,14 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			},
 		},
 	},
+	dragonclaw: {
+		inherit: true,
+		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, slicing: 1 },
+	},
+	firelash: {
+		inherit: true,
+		basePower: 90,
+	},
 	firstimpression: {
 		inherit: true,
 		basePower: 100,
@@ -27,6 +48,14 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	gravapple: {
 		inherit: true,
 		basePower: 90,
+	},
+	growth: {
+		inherit: true,
+		type: "Grass",
+	},
+	infernalparade: {
+		inherit: true,
+		basePower: 65,
 	},
 	ironhead: {
 		inherit: true,
@@ -44,9 +73,21 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			},
 		},
 	},
+	mountaingale: {
+		inherit: true,
+		basePower: 120,
+	},
+	nightdaze: {
+		inherit: true,
+		basePower: 90,
+	},
 	protect: {
 		inherit: true,
 		pp: 5,
+	},
+	psyshieldbash: {
+		inherit: true,
+		basePower: 90,
 	},
 	saltcure: {
 		inherit: true,
@@ -57,9 +98,21 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			},
 		},
 	},
+	shadowclaw: {
+		inherit: true,
+		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, slicing: 1 },
+	},
 	snaptrap: {
 		inherit: true,
 		type: "Steel",
+	},
+	spiritshackle: {
+		inherit: true,
+		basePower: 90,
+	},
+	syrupbomb: {
+		inherit: true,
+		accuracy: 90,
 	},
 	toxicthread: {
 		inherit: true,
