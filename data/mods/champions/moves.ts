@@ -11,6 +11,10 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		inherit: true,
 		basePower: 110,
 	},
+	banefulbunker: {
+		inherit: true,
+		pp: 5,
+	},
 	beakblast: {
 		inherit: true,
 		basePower: 120,
@@ -27,6 +31,10 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	bonerush: {
 		inherit: true,
 		basePower: 30,
+	},
+	clangoroussoul: {
+		inherit: true,
+		accuracy: true,
 	},
 	crabhammer: {
 		inherit: true,
@@ -91,6 +99,14 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			volatileStatus: 'flinch',
 		},
 	},
+	kingsshield: {
+		inherit: true,
+		pp: 5,
+	},
+	makeitrain: {
+		inherit: true,
+		accuracy: 95,
+	},
 	moonblast: {
 		inherit: true,
 		secondary: {
@@ -108,6 +124,18 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		inherit: true,
 		basePower: 90,
 	},
+	nightslash: {
+		inherit: true,
+		pp: 20,
+	},
+	nihillight: {
+		inherit: true,
+		pp: 5,
+	},
+	obstruct: {
+		inherit: true,
+		pp: 5,
+	},
 	protect: {
 		inherit: true,
 		pp: 5,
@@ -115,6 +143,10 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	psyshieldbash: {
 		inherit: true,
 		basePower: 90,
+	},
+	purify: {
+		inherit: true,
+		pp: 5,
 	},
 	revelationdance: {
 		inherit: true,
@@ -129,9 +161,17 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			},
 		},
 	},
+	sandstorm: {
+		inherit: true,
+		pp: 5,
+	},
 	shadowclaw: {
 		inherit: true,
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, slicing: 1 },
+	},
+	shelltrap: {
+		inherit: true,
+		pp: 10,
 	},
 	snaptrap: {
 		inherit: true,
@@ -140,6 +180,18 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	snipeshot: {
 		inherit: true,
 		basePower: 85,
+	},
+	snowscape: {
+		inherit: true,
+		pp: 5,
+	},
+	spikyshield: {
+		inherit: true,
+		pp: 5,
+	},
+	spinout: {
+		inherit: true,
+		pp: 10,
 	},
 	spiritshackle: {
 		inherit: true,
