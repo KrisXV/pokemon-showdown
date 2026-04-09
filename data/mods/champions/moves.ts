@@ -25,6 +25,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 						target,
 						// targetLoc: undefined,
 						moveid: move.id,
+						order: action.order, // TODO: check Quash + Encore interaction
 					});
 				}
 			},
