@@ -54,4 +54,22 @@ export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDa
 			return false;
 		},
 	},
+	sunnyday: {
+		inherit: true,
+		onWeatherModifyDamage(damage, attacker, defender, move) {
+			if (move.id === 'hydrosteam' && attacker.effectiveWeather() === 'sunnyday') {
+				this.debug('Sunny Day Hydro Steam boost');
+				return this.chainModify(1.5);
+			}
+			if (attacker.effectiveWeather() !== 'sunnyday') return;
+			if (move.type === 'Fire') {
+				this.debug('Sunny Day fire boost');
+				return this.chainModify(1.5);
+			}
+			if (move.type === 'Water') {
+				this.debug('Sunny Day water suppress');
+				return this.chainModify(0.5);
+			}
+		},
+	},
 };
