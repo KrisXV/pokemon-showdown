@@ -28,7 +28,6 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 					});
 				}
 			},
-			onOverrideAction: undefined, // no inherit
 		},
 	},
 	ironhead: {
