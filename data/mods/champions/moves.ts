@@ -48,6 +48,15 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		inherit: true,
 		pp: 5,
 	},
+	saltcure: {
+		inherit: true,
+		condition: {
+			inherit: true,
+			onResidual(pokemon) {
+				this.damage(pokemon.baseMaxhp / (pokemon.hasType(['Water', 'Steel']) ? 8 : 16));
+			},
+		},
+	},
 	snaptrap: {
 		inherit: true,
 		type: "Steel",
