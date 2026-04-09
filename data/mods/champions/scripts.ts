@@ -42,6 +42,7 @@ export const Scripts: ModdedBattleScriptsData = {
 	},
 	pokemon: {
 		// Don't revert Mega Evolutions after fainting
+		// TODO: confirm interaction with Revival Blessing
 		formeChange(speciesId, source, isPermanent, abilitySlot = '0', message) {
 			const rawSpecies = this.battle.dex.species.get(speciesId);
 
