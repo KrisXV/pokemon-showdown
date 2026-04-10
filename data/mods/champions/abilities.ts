@@ -12,4 +12,16 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		desc: "50% chance this Pokemon's ally has its non-volatile status condition cured at the end of each turn.",
 		shortDesc: "50% chance this Pokemon's ally has its status cured at the end of each turn.",
 	},
+	shedskin: {
+		inherit: true,
+		onResidual(pokemon) {
+			if (pokemon.hp && pokemon.status && this.randomChance(3, 10)) {
+				this.debug('shed skin');
+				this.add('-activate', pokemon, 'ability: Shed Skin');
+				pokemon.cureStatus();
+			}
+		},
+		desc: "This Pokemon has a 30% chance to have its non-volatile status condition cured at the end of each turn.",
+		shortDesc: "This Pokemon has a 30% chance to have its status cured at the end of each turn.",
+	},
 };
