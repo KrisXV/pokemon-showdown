@@ -61,10 +61,6 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		inherit: true,
 		isNonstandard: "Past",
 	},
-	bide: {
-		inherit: true,
-		isNonstandard: null,
-	},
 	blazingtorque: {
 		inherit: true,
 		isNonstandard: "Past",
@@ -161,6 +157,10 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	crabhammer: {
 		inherit: true,
 		accuracy: 95,
+	},
+	crushgrip: {
+		inherit: true,
+		isNonstandard: "Past",
 	},
 	cut: {
 		inherit: true,
@@ -325,10 +325,6 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	freezingglare: {
 		inherit: true,
 		isNonstandard: "Past",
-	},
-	frustration: {
-		inherit: true,
-		isNonstandard: null,
 	},
 	furyattack: {
 		inherit: true,
@@ -516,10 +512,6 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		inherit: true,
 		isNonstandard: "Past",
 	},
-	magnitude: {
-		inherit: true,
-		isNonstandard: null,
-	},
 	makeitrain: {
 		inherit: true,
 		accuracy: 95,
@@ -528,10 +520,6 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	malignantchain: {
 		inherit: true,
 		isNonstandard: "Past",
-	},
-	mefirst: {
-		inherit: true,
-		isNonstandard: null,
 	},
 	megadrain: {
 		inherit: true,
@@ -585,14 +573,6 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	mysticalpower: {
 		inherit: true,
 		isNonstandard: "Past",
-	},
-	naturalgift: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	naturesmadness: {
-		inherit: true,
-		isNonstandard: null,
 	},
 	nightdaze: {
 		inherit: true,
@@ -670,6 +650,10 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		inherit: true,
 		isNonstandard: "Past",
 	},
+	present: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
 	prismaticlaser: {
 		inherit: true,
 		isNonstandard: "Past",
@@ -698,14 +682,6 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		inherit: true,
 		isNonstandard: "Past",
 	},
-	psywave: {
-		inherit: true,
-		isNonstandard: null,
-	},
-	punishment: {
-		inherit: true,
-		isNonstandard: null,
-	},
 	purify: {
 		inherit: true,
 		pp: 5,
@@ -730,10 +706,6 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		inherit: true,
 		isNonstandard: "Past",
 	},
-	return: {
-		inherit: true,
-		isNonstandard: null,
-	},
 	revelationdance: {
 		inherit: true,
 		basePower: 100,
@@ -756,6 +728,10 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		isNonstandard: "Past",
 	},
 	rollout: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	ruination: {
 		inherit: true,
 		isNonstandard: "Past",
 	},
@@ -1018,10 +994,6 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		inherit: true,
 		basePower: 85,
 	},
-	trumpcard: {
-		inherit: true,
-		isNonstandard: null,
-	},
 	twister: {
 		inherit: true,
 		isNonstandard: "Past",
@@ -1073,10 +1045,6 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	workup: {
 		inherit: true,
 		isNonstandard: "Past",
-	},
-	wringout: {
-		inherit: true,
-		isNonstandard: null,
 	},
 	zingzap: {
 		inherit: true,
