@@ -558,7 +558,8 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 				this.debug('Sunny Day Hydro Steam boost');
 				return this.chainModify(1.5);
 			}
-			if (defender.effectiveWeather() !== 'sunnyday') return;
+			// TODO: check interaction between Mega Sol and Utility Umbrella
+			if (defender.effectiveWeather() !== 'sunnyday' && !attacker.hasAbility('megasol')) return;
 			if (move.type === 'Fire') {
 				this.debug('Sunny Day fire boost');
 				return this.chainModify(1.5);
