@@ -144,7 +144,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		tier: "Illegal",
 	},
 	pikachu: {
-		tier: "OU",
+		tier: "NFE",
 	},
 	pikachucosplay: {
 		isNonstandard: "Past",
@@ -1604,8 +1604,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		tier: "Illegal",
 	},
 	pelipper: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		tier: "OU",
 	},
 	ralts: {
 		isNonstandard: "Past",
@@ -3380,14 +3379,14 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		tier: "Illegal",
 	},
 	aromatisse: {
-		tier: "Illegal",
+		tier: "OU",
 	},
 	swirlix: {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
 	slurpuff: {
-		tier: "Illegal",
+		tier: "OU",
 	},
 	inkay: {
 		isNonstandard: "Past",
@@ -3511,6 +3510,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		tier: "OU",
 	},
 	gourgeistsmall: {
+		tier: "OU",
 	},
 	gourgeistlarge: {
 		tier: "OU",
