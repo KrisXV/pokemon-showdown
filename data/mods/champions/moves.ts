@@ -158,6 +158,10 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		inherit: true,
 		accuracy: 95,
 	},
+	crushclaw: {
+		inherit: true,
+		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, slicing: 1 },
+	},
 	crushgrip: {
 		inherit: true,
 		isNonstandard: "Past",
@@ -221,6 +225,10 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		inherit: true,
 		isNonstandard: "Past",
 	},
+	dragoncheer: {
+		inherit: true,
+		flags: { bypasssub: 1, allyanim: 1, metronome: 1, sound: 1 },
+	},
 	dragonclaw: {
 		inherit: true,
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, slicing: 1 },
@@ -262,30 +270,6 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		inherit: true,
 		isNonstandard: "Past",
 	},
-	esperwing: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	fairywind: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	falsesurrender: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	falseswipe: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	fierywrath: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
-	filletaway: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
 	encore: {
 		inherit: true,
 		condition: {
@@ -317,6 +301,30 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 				}
 			},
 		},
+	},
+	esperwing: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	fairywind: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	falsesurrender: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	falseswipe: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	fierywrath: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
+	filletaway: {
+		inherit: true,
+		isNonstandard: "Past",
 	},
 	firelash: {
 		inherit: true,
@@ -501,8 +509,8 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	},
 	kingsshield: {
 		inherit: true,
-		pp: 5,
 		isNonstandard: null,
+		pp: 5,
 	},
 	leafage: {
 		inherit: true,
@@ -564,6 +572,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	metalclaw: {
 		inherit: true,
 		isNonstandard: "Past",
+		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, slicing: 1 },
 	},
 	metronome: {
 		inherit: true,
@@ -726,6 +735,10 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		inherit: true,
 		isNonstandard: "Past",
 	},
+	ragepowder: {
+		inherit: true,
+		flags: { noassist: 1, failcopycat: 1 },
+	},
 	razorleaf: {
 		inherit: true,
 		isNonstandard: "Past",
@@ -858,8 +871,8 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	},
 	snaptrap: {
 		inherit: true,
-		type: "Steel",
 		isNonstandard: null,
+		type: "Steel",
 	},
 	snipeshot: {
 		inherit: true,
@@ -884,8 +897,8 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	},
 	spinout: {
 		inherit: true,
-		pp: 10,
 		isNonstandard: "Past",
+		pp: 10,
 	},
 	spiritbreak: {
 		inherit: true,
