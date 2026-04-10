@@ -1006,6 +1006,7 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	whiteherb: {
 		inherit: true,
 		onAnyAfterMove() {
+			// Desync: proceed from Parting Shot's point of view
 			this.queue.insertChoice({
 				choice: 'event',
 				event: 'WhiteHerb',
