@@ -22,7 +22,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 				} else {
 					this.queue.changeAction(target, {
 						choice: 'move',
-						target,
+						// target: undefined,
 						// targetLoc: undefined,
 						moveid: move.id,
 						order: action.order, // TODO: check Quash + Encore interaction
