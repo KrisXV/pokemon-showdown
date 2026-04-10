@@ -1812,7 +1812,7 @@ export const Rulesets: import('../sim/dex-formats').FormatDataTable = {
 		effectType: 'ValidatorRule',
 		name: 'Champions Normal Rules',
 		desc: "Tells formats with the 'champions' mod to set the level to 50 and change EVs to Stat Points",
-		ruleset: ['Adjust Level = 50', 'Team Preview', 'Item Clause'],
+		ruleset: ['Adjust Level = 50', 'Team Preview', 'Species Clause', 'Item Clause', 'Obtainable'],
 		// Stat Points implemented in TeamValidator#validateStats
 		onBegin() {
 			this.reportPercentages = true;
