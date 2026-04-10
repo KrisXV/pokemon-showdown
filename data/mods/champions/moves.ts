@@ -51,6 +51,10 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			},
 		},
 	},
+	doubleshock: {
+		inherit: true,
+		isNonstandard: "Past",
+	},
 	dragonclaw: {
 		inherit: true,
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, slicing: 1 },
@@ -151,6 +155,10 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	revelationdance: {
 		inherit: true,
 		basePower: 100,
+	},
+	revivalblessing: {
+		inherit: true,
+		isNonstandard: "Past",
 	},
 	saltcure: {
 		inherit: true,
