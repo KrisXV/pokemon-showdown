@@ -740,7 +740,11 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	ragefist: {
 		inherit: true,
 		isNonstandard: "Past",
-},
+	},
+	// ragepowder: {
+	// 	inherit: true,
+	// 	flags: { noassist: 1, failcopycat: 1 },
+	// },
 	razorleaf: {
 		inherit: true,
 		isNonstandard: "Past",
