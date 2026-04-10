@@ -61,6 +61,7 @@ export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDa
 				this.debug('Sunny Day Hydro Steam boost');
 				return this.chainModify(1.5);
 			}
+			// TODO: check interaction with Utility Umbrella
 			if (attacker.effectiveWeather() !== 'sunnyday') return;
 			if (move.type === 'Fire') {
 				this.debug('Sunny Day fire boost');
