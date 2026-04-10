@@ -196,6 +196,8 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 				target.trySetStatus(status, source);
 			},
 		},
+		desc: "Has a 30% chance to cause the target to either fall asleep, become poisoned, or become paralyzed.",
+		shortDesc: "30% chance to sleep, poison, or paralyze target.",
 	},
 	disarmingvoice: {
 		inherit: true,
@@ -490,6 +492,8 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			chance: 20,
 			volatileStatus: 'flinch',
 		},
+		desc: "Has a 20% chance to make the target flinch.",
+		shortDesc: "20% chance to make the target flinch.",
 	},
 	ivycudgel: {
 		inherit: true,
@@ -602,6 +606,8 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 				spa: -1,
 			},
 		},
+		desc: "Has a 10% chance to lower the target's Special Attack by 1 stage.",
+		shortDesc: "10% chance to lower the target's Sp. Atk by 1.",
 	},
 	moongeistbeam: {
 		inherit: true,
@@ -792,6 +798,8 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 				this.damage(pokemon.baseMaxhp / (pokemon.hasType(['Water', 'Steel']) ? 8 : 16));
 			},
 		},
+		desc: "Causes damage to the target equal to 1/16 of its maximum HP (1/8 if the target is Steel or Water type), rounded down, at the end of each turn during effect. This effect ends when the target is no longer active.",
+		shortDesc: "Deals 1/16 max HP each turn; 1/8 on Steel, Water.",
 	},
 	sandattack: {
 		inherit: true,
@@ -1021,6 +1029,8 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		boosts: {
 			spe: -2,
 		},
+		desc: "Lowers the target's Speed by 2 stages and poisons it.",
+		shortDesc: "Lowers the target's Speed by 2 and poisons it.",
 	},
 	trickortreat: {
 		inherit: true,
